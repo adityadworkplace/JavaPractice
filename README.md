@@ -40,16 +40,16 @@ The goal is to become comfortable writing standalone Java applications without d
 
 ### Topics
 
-- [ ] Understand JDK, JRE, and JVM.
-- [ ] Understand Java source code and bytecode.
-- [ ] Understand Java compilation and execution.
-- [ ] Install and configure JDK.
-- [ ] Configure Java in VS Code.
-- [ ] Understand Java extensions in VS Code.
-- [ ] Understand Java project structure.
-- [ ] Understand packages and imports.
-- [ ] Compile and execute Java programs using the terminal.
-- [ ] Explore JShell.
+- [x] Understand JDK, JRE, and JVM.
+- [x] Understand Java source code and bytecode.
+- [x] Understand Java compilation and execution.
+- [x] Install and configure JDK.
+- [x] Configure Java in VS Code.
+- [x] Understand Java extensions in VS Code.
+- [x] Understand Java project structure.
+- [x] Understand packages and imports.
+- [x] Compile and execute Java programs using the terminal.
+- [x] Explore JShell.
 
 ### Practical Tasks
 
