@@ -53,18 +53,18 @@ The goal is to become comfortable writing standalone Java applications without d
 
 ### Practical Tasks
 
-- [ ] Create and execute a Hello World program.
-- [ ] Create a Java project in VS Code.
-- [ ] Compile and execute a program using the terminal.
-- [ ] Create a program using multiple Java classes.
-- [ ] Create a simple program using packages.
+- [x] Create and execute a Hello World program.
+- [x] Create a Java project in VS Code.
+- [x] Compile and execute a program using the terminal.
+- [x] Create a program using multiple Java classes.
+- [x] Create a simple program using packages.
 
 ### Completion Criteria
 
-- [ ] Can independently create, compile, and execute Java programs.
-- [ ] Can explain the roles of JDK, JVM, and bytecode.
-- [ ] Can create and organize a basic Java project.
-- [ ] Can execute Java programs without relying on IDE shortcuts.
+- [x] Can independently create, compile, and execute Java programs.
+- [x] Can explain the roles of JDK, JVM, and bytecode.
+- [x] Can create and organize a basic Java project.
+- [x] Can execute Java programs without relying on IDE shortcuts.
 
 ---
 
