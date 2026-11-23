@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
-import javax.sound.midi.SysexMessage;
 class Name {
     public String askName(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Your Name: ");
-        String s = sc.next();
+        String s = sc.nextLine();
         return s;
     }
 }

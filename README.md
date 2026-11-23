@@ -1,1137 +1,2258 @@
-# Java Development Roadmap
+# Java Backend Development Roadmap
 
-A structured, hands-on journey to mastering Java programming, followed by professional backend development using the Java ecosystem.
+A practical, exercise-driven journey from Java fundamentals to independently designing, building, testing, securing, and deploying production-oriented backend applications.
 
 ## End Goal
 
-Become proficient in Java programming and capable of independently designing, developing, testing, debugging, and deploying real-world backend applications using Java and Spring Boot.
+Become proficient in Java programming and capable of independently developing real-world backend applications using Java, Spring Boot, PostgreSQL, and the surrounding ecosystem.
+
+The focus of this roadmap is **learning by building and solving problems**, not completing theory chapters.
+
+## How to Track Progress
+
+- Check an exercise requirement only after you have implemented it in code.
+- Check a **Done when** item only after you have tested or verified that criterion.
+- The **Concepts required** lists are learning references; reading about a concept is not practical completion.
+- The Skills Coverage Ledger tracks concepts you have actually used in code, not concepts you have only read about.
+- Work through Track 1 before Track 2. Track 3 projects bring the skills together.
+
+
+---
 
 ## Development Environment
 
 | Component | Technology |
 |---|---|
-| Programming Language | Java |
+| Programming Language | Java (LTS) |
 | IDE | Visual Studio Code |
-| JDK | Java LTS version |
+| JDK | Java LTS |
 | Build Tool | Maven |
 | Database | PostgreSQL |
 | Backend Framework | Spring Boot |
 | Testing | JUnit 5, Mockito |
 | Version Control | Git and GitHub |
 | Containerization | Docker |
+| API Documentation | OpenAPI / Swagger |
 
 ---
 
-# TRACK 1: JAVA CORE AND ADVANCED JAVA
+# Index
 
-**Objective:** Develop a strong understanding of Java as a programming language, its object-oriented model, standard libraries, runtime environment, and advanced programming capabilities.
+## Track 1 — Java Programming
 
-The goal is to become comfortable writing standalone Java applications without depending on backend frameworks.
+- [Phase 1: Java Fundamentals](#phase-1-java-fundamentals)
+- [Phase 2: Object-Oriented Programming](#phase-2-object-oriented-programming)
+- [Phase 3: Core Java and Standard Libraries](#phase-3-core-java-and-standard-libraries)
+- [Phase 4: Java Tools, Testing and Engineering Practices](#phase-4-java-tools-testing-and-engineering-practices)
+
+## Track 2 — Backend Development
+
+- [Phase 5: SQL, Databases and JDBC](#phase-5-sql-databases-and-jdbc)
+- [Phase 6: Spring and Spring Boot](#phase-6-spring-and-spring-boot)
+- [Phase 7: Persistence and Backend Security](#phase-7-persistence-and-backend-security)
+- [Phase 8: Backend Engineering and Architecture](#phase-8-backend-engineering-and-architecture)
+- [Phase 9: Deployment and Production Practices](#phase-9-deployment-and-production-practices)
+
+## Track 3 — Independent Projects
+
+- [Beginner Projects](#beginner-projects)
+- [Intermediate Projects](#intermediate-projects)
+- [Advanced Projects](#advanced-projects)
+- [Final Capstone](#final-capstone-project)
+
+## Progress
+
+- [Skills Coverage Ledger](#skills-coverage-ledger)
 
 ---
 
-## 1. Development Environment Setup
+# TRACK 1: JAVA PROGRAMMING
 
-### Learning Objectives
-- Understand the Java development ecosystem.
-- Set up a working Java development environment.
-- Understand how Java source code is compiled and executed.
-- Independently compile and run Java applications.
+# Phase 1: Java Fundamentals
 
-### Topics
+**Objective:** Become comfortable solving programming problems independently using Java's basic language constructs.
 
-- [x] Understand JDK, JRE, and JVM.
-- [x] Understand Java source code and bytecode.
-- [x] Understand Java compilation and execution.
-- [x] Install and configure JDK.
+The exercises in this phase progressively introduce programming logic, data manipulation, control flow, methods, arrays, strings, and basic problem-solving techniques.
+
+## 1. Development Environment and First Programs
+
+### Exercise 0 — Console Greeting
+
+This exercise records the functionality demonstrated by your submitted `Name` and `Hello` classes.
+
+**Implemented in your submitted code**
+- [x] Create separate `Name` and `Hello` classes.
+- [x] Create a `Name` object using `new`.
+- [x] Define and call an instance method.
+- [x] Return a `String` from `askName()`.
+- [x] Read console input using `Scanner`.
+- [x] Print a greeting using string concatenation.
+
+
+**Done when**
+- [x] The program accepts and displays a full name, including spaces.
+- [x] Unused imports have been removed.
+
+
+
+### Environment and first-program checklist
+
+- [x] Install and configure the JDK.
 - [x] Configure Java in VS Code.
-- [x] Understand Java extensions in VS Code.
-- [x] Understand Java project structure.
-- [x] Understand packages and imports.
-- [x] Compile and execute Java programs using the terminal.
-- [x] Explore JShell.
-
-### Practical Tasks
-
-- [x] Create and execute a Hello World program.
+- [x] Write a basic greeting program.
+- [x] Run the program successfully.
 - [x] Create a Java project in VS Code.
 - [x] Compile and execute a program using the terminal.
 - [x] Create a program using multiple Java classes.
 - [x] Create a simple program using packages.
 
-### Completion Criteria
-
-- [x] Can independently create, compile, and execute Java programs.
-- [x] Can explain the roles of JDK, JVM, and bytecode.
-- [x] Can create and organize a basic Java project.
-- [x] Can execute Java programs without relying on IDE shortcuts.
+**Concepts covered:** JDK, JVM, bytecode, compilation, execution, project structure, packages, imports, classes, `main()`.
 
 ---
 
-## 2. Java Language Fundamentals
+## 2. Basic Programming and Input/Output
 
-### Learning Objectives
-- Understand Java syntax and language constructs.
-- Work with variables, data types, operators, and control flow.
-- Write reusable programs using methods.
-- Understand Java's handling of primitive values and object references.
+### Exercise 1 — Personal Information Console
 
-### Topics
+**Objective:** Build a program that collects and displays information about a user.
 
-- [ ] Variables and constants.
-- [ ] Primitive data types.
-- [ ] Reference data types.
-- [ ] Type casting and type conversion.
-- [ ] Operators and expressions.
-- [ ] Conditional statements (if, else).
-- [ ] Switch statements and expressions.
-- [ ] Loops (for, while, do-while).
-- [ ] Break and continue.
-- [ ] User input using Scanner.
-- [ ] Methods and method parameters.
-- [ ] Return types.
-- [ ] Method overloading.
-- [ ] Variable scope and lifetime.
-- [ ] Pass-by-value in Java.
-- [ ] Recursion.
-- [ ] Arrays (1D and multidimensional).
-- [ ] Strings and String methods.
-- [ ] StringBuilder and StringBuffer.
-- [ ] Wrapper classes.
-- [ ] Autoboxing and unboxing.
+**Requirements**
+- [ ] Collect name, age, city, and other personal information.
+- [ ] Store values using appropriate data types.
+- [ ] Display the information in a formatted manner.
+- [ ] Calculate the user's age after five years.
+- [ ] Handle names containing spaces.
 
-### Practical Tasks
+**Concepts required**
+- Variables and constants.
+- Primitive and reference data types.
+- Type casting and conversion.
+- Scanner and console input.
+- String concatenation and formatting.
+- Arithmetic operators.
 
-- [ ] Basic calculator.
-- [ ] Number guessing game.
-- [ ] Prime number checker.
-- [ ] Fibonacci series.
-- [ ] Palindrome checker.
-- [ ] Number manipulation programs.
-- [ ] Pattern printing problems.
-- [ ] Array manipulation programs.
-- [ ] String manipulation programs.
-- [ ] Mathematical utility programs.
+**Done when**
+- [ ] All information is collected and displayed correctly.
+- [ ] Appropriate data types are used.
+- [ ] Inputs containing spaces are handled correctly.
 
-### Completion Criteria
+### Exercise 2 — Smart Calculator
 
-- [ ] Can write programs using fundamental Java constructs.
-- [ ] Can break problems into reusable methods.
-- [ ] Can work with arrays and strings independently.
-- [ ] Understands primitive and reference data types.
-- [ ] Understands pass-by-value in Java.
-- [ ] Can solve basic programming problems independently.
+**Objective:** Build a calculator that supports multiple mathematical operations.
+
+**Requirements**
+- [ ] Addition, subtraction, multiplication, division, and modulus.
+- [ ] Accept multiple operations.
+- [ ] Support decimal numbers.
+- [ ] Display meaningful results.
+- [ ] Prevent division by zero.
+- [ ] Allow the user to choose operations.
+
+**Concepts required**
+- Operators and expressions.
+- Conditional statements.
+- Switch statements and expressions.
+- Numeric types and conversion.
+- Input validation.
+
+**Done when**
+- [ ] All supported operations work.
+- [ ] Invalid operations are handled.
+- [ ] Division by zero does not produce an uncontrolled failure.
 
 ---
 
-## 3. Object-Oriented Programming
+## 3. Conditional Logic and Number Problems
 
-### Learning Objectives
-- Understand Java's object-oriented programming model.
-- Design classes and objects.
-- Apply the four pillars of OOP.
-- Understand relationships between objects.
-- Write modular and reusable object-oriented applications.
+### Exercise 3 — Number Analyzer
 
-### Topics
+**Objective:** Build a program that analyzes numbers and identifies their mathematical properties.
 
-- [ ] Classes and objects.
-- [ ] Fields and methods.
-- [ ] Constructors.
-- [ ] Constructor overloading.
-- [ ] this keyword.
-- [ ] Static variables, methods, and blocks.
-- [ ] Access modifiers.
-- [ ] Encapsulation.
-- [ ] Inheritance.
-- [ ] Method overriding.
-- [ ] Polymorphism.
-- [ ] Abstraction.
-- [ ] Abstract classes.
-- [ ] Interfaces.
-- [ ] super keyword.
-- [ ] final keyword.
-- [ ] Association.
-- [ ] Aggregation.
-- [ ] Composition.
-- [ ] Object class.
-- [ ] toString().
-- [ ] equals() and hashCode().
-- [ ] Object references.
-- [ ] Shallow copy and deep copy.
-- [ ] Immutable objects.
-- [ ] Enums.
-- [ ] Nested and inner classes.
-- [ ] Anonymous classes.
+**Requirements**
+- [ ] Check whether a number is positive, negative, or zero.
+- [ ] Identify even and odd numbers.
+- [ ] Check whether a number is prime.
+- [ ] Check whether a number is an Armstrong number.
+- [ ] Check whether a number is a palindrome.
+- [ ] Identify perfect numbers.
+- [ ] Calculate the sum of digits.
+- [ ] Reverse a number.
 
-### Practical Tasks
+**Concepts required**
+- If, else-if, and else.
+- Nested conditions.
+- Modulus and division.
+- Loops.
+- Boolean expressions.
+- Methods and return values.
 
-- [ ] Student Management System.
-- [ ] Banking System.
-- [ ] Employee Management System.
-- [ ] Library Management System.
-- [ ] Implement a custom immutable class.
-- [ ] Implement custom equals() and hashCode().
+**Done when**
+- [ ] Each analysis produces correct results.
+- [ ] Boundary cases such as zero, negative numbers, and single-digit numbers are handled appropriately.
+- [ ] Individual operations are organized into reusable methods.
 
-### Completion Criteria
+### Exercise 4 — Number Guessing Game
 
-- [ ] Can independently design classes and their relationships.
-- [ ] Can implement encapsulation, inheritance, polymorphism, and abstraction.
-- [ ] Can explain interfaces versus abstract classes.
-- [ ] Understands composition versus inheritance.
-- [ ] Can design modular object-oriented applications.
-- [ ] Can implement object equality correctly.
+**Objective:** Create an interactive number guessing game.
 
----
+**Requirements**
+- [ ] Generate a random number.
+- [ ] Accept guesses from the user.
+- [ ] Tell the user whether the guess is too high or too low.
+- [ ] Count the number of attempts.
+- [ ] Support a maximum attempt limit.
+- [ ] Allow the user to restart.
 
-## 4. Exception Handling
+**Concepts required**
+- Random number generation.
+- While loops.
+- Do-while loops.
+- Break and continue.
+- Conditional logic.
+- Input validation.
 
-### Learning Objectives
-- Understand Java's exception hierarchy.
-- Handle runtime failures appropriately.
-- Design custom exceptions.
-- Write reliable applications with proper resource management.
+**Implementation constraint**
+- [ ] Use a `while` loop for one version.
+- [ ] Implement another version using `do-while`.
+- [ ] Compare the two approaches.
 
-### Topics
+**Done when**
+- [ ] The game behaves correctly for valid and invalid guesses.
+- [ ] The attempt count is accurate.
+- [ ] Restarting works.
 
-- [ ] Exceptions and Errors.
-- [ ] Exception hierarchy.
-- [ ] Checked exceptions.
-- [ ] Unchecked exceptions.
-- [ ] try, catch, and finally.
-- [ ] Multiple catch blocks.
-- [ ] throw and throws.
-- [ ] Custom exceptions.
-- [ ] Exception propagation.
-- [ ] Try-with-resources.
-- [ ] Exception handling best practices.
+### Exercise 5 — Multiplication and Pattern Generator
 
-### Practical Tasks
+**Objective:** Build a program that generates mathematical tables and number patterns.
 
-- [ ] Implement custom validation exceptions.
-- [ ] Handle invalid user inputs.
-- [ ] Implement exception handling in a banking application.
-- [ ] Handle file-related exceptions.
+**Requirements**
+- [ ] Generate multiplication tables.
+- [ ] Generate triangular number patterns.
+- [ ] Generate pyramid and inverted patterns.
+- [ ] Generate number sequences.
+- [ ] Allow the user to select a pattern.
 
-### Completion Criteria
+**Concepts required**
+- For loops.
+- Nested loops.
+- Loop control.
+- Arithmetic expressions.
+- Switch statements.
 
-- [ ] Can distinguish checked and unchecked exceptions.
-- [ ] Can create and handle custom exceptions.
-- [ ] Can implement appropriate exception propagation.
-- [ ] Can write resource-safe code using try-with-resources.
+**Done when**
+- [ ] All patterns are generated correctly.
+- [ ] Different pattern sizes can be selected.
 
 ---
 
-## 5. Java Collections Framework
+## 4. Looping Techniques and Iteration
 
-### Learning Objectives
-- Understand Java's built-in data structures.
-- Select appropriate collections based on requirements.
-- Understand the internal working and performance characteristics of collections.
-- Implement custom sorting and iteration logic.
+### Exercise 6 — Collection and Sequence Processor
 
-### Topics
+**Objective:** Process a collection of numbers and generate useful statistics.
 
-- [ ] Collections Framework hierarchy.
-- [ ] Iterable and Collection interfaces.
-- [ ] List interface.
-- [ ] ArrayList.
-- [ ] LinkedList.
-- [ ] Vector and Stack.
-- [ ] Set interface.
-- [ ] HashSet.
-- [ ] LinkedHashSet.
-- [ ] TreeSet.
-- [ ] Queue and Deque.
-- [ ] PriorityQueue.
-- [ ] Map interface.
-- [ ] HashMap.
-- [ ] LinkedHashMap.
-- [ ] TreeMap.
-- [ ] ConcurrentHashMap.
-- [ ] Iterator and ListIterator.
-- [ ] Comparable and Comparator.
-- [ ] Collections utility class.
-- [ ] Internal working of HashMap.
-- [ ] Hashing and collision handling.
-- [ ] Time and space complexity of collection operations.
+**Requirements**
+- [ ] Accept a sequence of numbers.
+- [ ] Calculate sum, average, minimum, and maximum.
+- [ ] Count even and odd numbers.
+- [ ] Search for a particular value.
+- [ ] Display values satisfying selected conditions.
 
-### Practical Tasks
+**Concepts required**
+- For loops.
+- While loops.
+- Do-while loops.
+- Enhanced for loops.
+- Break and continue.
+- Arrays.
+- Basic searching and aggregation.
 
-- [ ] Implement sorting using Comparator.
-- [ ] Build a contact management application.
+**Implementation constraints**
+- [ ] Process a sequence using a traditional `for` loop.
+- [ ] Process an equivalent sequence using an enhanced `for` loop.
+- [ ] Use a `while` loop for a condition-driven operation.
+- [ ] Use `do-while` for an operation that must execute at least once.
+
+**Done when**
+- [ ] All statistics are correct.
+- [ ] You have implemented each required iteration style.
+- [ ] You understand when each approach is useful.
+
+---
+
+## 5. Methods and Reusable Logic
+
+### Exercise 7 — Mathematical Utility Library
+
+**Objective:** Create a collection of reusable mathematical operations.
+
+**Requirements**
+- [ ] Implement factorial.
+- [ ] Implement Fibonacci calculations.
+- [ ] Calculate powers.
+- [ ] Find GCD and LCM.
+- [ ] Check prime numbers.
+- [ ] Calculate the sum of digits.
+- [ ] Implement overloaded methods for selected operations.
+
+**Concepts required**
+- Methods.
+- Parameters and arguments.
+- Return types.
+- Method overloading.
+- Variable scope and lifetime.
+- Static and instance methods.
+- Pass-by-value.
+- Recursion.
+
+**Done when**
+- [ ] Operations are separated into reusable methods.
+- [ ] Methods accept appropriate parameters and return appropriate values.
+- [ ] Overloaded methods work correctly.
+
+### Exercise 8 — Recursive Problem Solver
+
+**Objective:** Solve selected programming problems using recursive methods.
+
+**Requirements**
+- [ ] Factorial using recursion.
+- [ ] Fibonacci using recursion.
+- [ ] Sum of digits using recursion.
+- [ ] Reverse a string using recursion.
+- [ ] Sum of array elements using recursion.
+- [ ] Binary search using recursion.
+
+**Concepts required**
+- Recursive methods.
+- Base cases.
+- Recursive cases.
+- Method call stack.
+- Stack overflow.
+- Iterative versus recursive approaches.
+
+**Implementation constraint**
+- [ ] Implement selected problems using both recursion and iteration.
+- [ ] Compare their behavior and limitations.
+
+**Done when**
+- [ ] Recursive solutions terminate correctly.
+- [ ] Base cases are handled.
+- [ ] You can explain the difference between recursive and iterative solutions.
+
+---
+
+## 6. Arrays and Data Manipulation
+
+### Exercise 9 — Array Management Utility
+
+**Objective:** Build a program for managing collections of numerical data.
+
+**Requirements**
+- [ ] Insert and update values.
+- [ ] Delete values.
+- [ ] Search for elements.
+- [ ] Sort elements.
+- [ ] Find duplicates.
+- [ ] Merge arrays.
+- [ ] Reverse arrays.
+- [ ] Calculate statistics.
+- [ ] Work with two-dimensional arrays.
+
+**Concepts required**
+- One-dimensional arrays.
+- Multidimensional arrays.
+- Array traversal.
+- Searching and sorting.
+- Array copying.
+- Basic algorithm complexity.
+
+**Done when**
+- [ ] All operations work correctly.
+- [ ] Empty arrays and invalid indexes are handled.
+- [ ] Sorting and searching produce correct results.
+
+### Exercise 10 — Matrix Operations
+
+**Objective:** Build a matrix calculator.
+
+**Requirements**
+- [ ] Matrix addition and subtraction.
+- [ ] Matrix multiplication.
+- [ ] Matrix transpose.
+- [ ] Matrix diagonal calculations.
+- [ ] Matrix equality comparison.
+
+**Concepts required**
+- Two-dimensional arrays.
+- Nested loops.
+- Matrix dimensions.
+- Arithmetic operations.
+- Methods.
+
+**Done when**
+- [ ] Operations work for valid matrix dimensions.
+- [ ] Invalid dimension combinations are rejected.
+
+---
+
+## 7. Strings and Text Processing
+
+### Exercise 11 — Text Analyzer
+
+**Objective:** Build a program that analyzes text entered by a user.
+
+**Requirements**
+- [ ] Count characters, words, and sentences.
+- [ ] Count vowels and consonants.
+- [ ] Reverse text.
+- [ ] Check for palindromes.
+- [ ] Find repeated characters.
+- [ ] Find the most frequently occurring character.
+- [ ] Remove duplicate characters.
+- [ ] Compare two strings.
+
+**Concepts required**
+- String class.
+- String methods.
+- String immutability.
+- StringBuilder.
+- StringBuffer.
+- Character processing.
+- Wrapper classes.
+- Autoboxing and unboxing.
+
+**Done when**
+- [ ] Text analysis produces correct results.
+- [ ] Empty strings and spaces are handled.
+- [ ] String comparisons are performed correctly.
+
+---
+
+# Phase 2: Object-Oriented Programming
+
+**Objective:** Learn to design applications using classes, objects, responsibilities, and relationships rather than writing everything in a single program.
+
+## 1. Banking Application
+
+### Exercise 12 — Bank Account Simulator
+
+**Requirements**
+- [ ] Create multiple bank accounts.
+- [ ] Support deposits and withdrawals.
+- [ ] Maintain account balances.
+- [ ] Prevent overdrafts.
+- [ ] Display account information.
+- [ ] Track transactions.
+- [ ] Support account creation and closure.
+
+**Concepts required**
+- Classes and objects.
+- Fields and methods.
+- Constructors.
+- Constructor overloading.
+- `this` keyword.
+- Static and instance members.
+- Access modifiers.
+- Encapsulation.
+- Object references.
+
+**Done when**
+- [ ] Multiple accounts can operate independently.
+- [ ] Account data cannot be modified through uncontrolled access.
+- [ ] Account operations follow the specified rules.
+
+## 2. Object Relationships
+
+### Exercise 13 — Library Management System
+
+**Requirements**
+- [ ] Manage books and members.
+- [ ] Issue and return books.
+- [ ] Track borrowing records.
+- [ ] Prevent issuing unavailable books.
+- [ ] Maintain member borrowing history.
+- [ ] Search books by title, author, and identifier.
+
+**Concepts required**
+- Association.
+- Aggregation.
+- Composition.
+- Encapsulation.
+- Constructors.
+- Object references.
+- Collections.
+- Enums.
+
+**Done when**
+- [ ] Relationships between books, members, and borrowing records are correctly represented.
+- [ ] Business rules are enforced.
+- [ ] Responsibilities are separated across appropriate classes.
+
+## 3. Inheritance and Polymorphism
+
+### Exercise 14 — Employee Management System
+
+**Requirements**
+- [ ] Support different employee types.
+- [ ] Store employee information.
+- [ ] Calculate salaries according to employee type.
+- [ ] Generate employee reports.
+- [ ] Apply different rules to different employee categories.
+
+**Concepts required**
+- Inheritance.
+- Method overriding.
+- Polymorphism.
+- Abstract classes.
+- Interfaces.
+- `super` keyword.
+- `final` keyword.
+- Upcasting and downcasting.
+
+**Done when**
+- [ ] Different employee types can be handled through common abstractions.
+- [ ] Specialized behavior is implemented without unnecessary duplication.
+- [ ] You can explain when inheritance is appropriate.
+
+## 4. Interfaces and Composition
+
+### Exercise 15 — Payment Processing Simulator
+
+**Requirements**
+- [ ] Support multiple payment methods.
+- [ ] Process payments through a common interface.
+- [ ] Support payment validation.
+- [ ] Generate transaction receipts.
+- [ ] Add a new payment method without rewriting existing payment logic.
+
+**Concepts required**
+- Interfaces.
+- Abstract classes.
+- Polymorphism.
+- Composition.
+- Dependency inversion fundamentals.
+- Default and static interface methods.
+
+**Done when**
+- [ ] Different payment implementations can be substituted.
+- [ ] The main payment workflow does not depend on specific implementations.
+
+## 5. Object Design and Equality
+
+### Exercise 16 — Custom Domain Model
+
+**Requirements**
+- [ ] Create a set of domain classes for an application of your choice.
+- [ ] Implement meaningful object equality.
+- [ ] Provide readable object representations.
+- [ ] Implement immutable value objects.
+- [ ] Explore copying objects safely.
+- [ ] Use nested or inner classes where they are appropriate.
+
+**Concepts required**
+- Object class.
+- `toString()`.
+- `equals()` and `hashCode()`.
+- Immutable objects.
+- Shallow and deep copying.
+- Nested and inner classes.
+- Anonymous classes.
+
+**Done when**
+- [ ] Object equality behaves correctly.
+- [ ] Immutable objects cannot be modified after creation.
+- [ ] Object representations are useful for debugging.
+
+---
+
+# Phase 3: Core Java and Standard Libraries
+
+**Objective:** Become comfortable using Java's standard libraries to build reliable, maintainable applications.
+
+## 1. Exception Handling
+
+### Exercise 17 — Reliable Banking Application
+
+Extend the banking application to handle invalid operations safely.
+
+**Requirements**
+- [ ] Handle invalid input.
+- [ ] Prevent invalid deposits and withdrawals.
+- [ ] Handle missing accounts.
+- [ ] Handle insufficient funds.
+- [ ] Create meaningful custom exceptions.
+- [ ] Ensure resources are closed properly.
+
+**Concepts required**
+- Exception and Error hierarchy.
+- Checked and unchecked exceptions.
+- Try, catch, and finally.
+- Multiple catch blocks.
+- Throw and throws.
+- Custom exceptions.
+- Exception propagation.
+- Try-with-resources.
+
+**Done when**
+- [ ] Invalid operations produce meaningful errors.
+- [ ] Exceptions are handled at appropriate boundaries.
+- [ ] Resources are released safely.
+
+## 2. Collections Framework
+
+### Exercise 18 — Contact Management Application
+
+**Requirements**
+- [ ] Create, update, delete, and search contacts.
+- [ ] Prevent duplicate contacts.
+- [ ] Support sorting by name and other attributes.
+- [ ] Support filtering.
+- [ ] Maintain insertion order where required.
+- [ ] Search contacts efficiently.
+
+**Concepts required**
+- Iterable and Collection.
+- List, ArrayList, LinkedList.
+- Set, HashSet, LinkedHashSet, TreeSet.
+- Map, HashMap, LinkedHashMap, TreeMap.
+- Queue and Deque.
+- PriorityQueue.
+- Iterator and ListIterator.
+- Comparable and Comparator.
+- Collections utility class.
+- Enhanced for loops.
+
+**Done when**
+- [ ] You have practically used the major collection categories.
+- [ ] You can select collections based on ordering, uniqueness, and access requirements.
+- [ ] Sorting and searching work correctly.
+
+### Exercise 19 — Data Structure Practice
+
+**Requirements**
+- [ ] Implement a stack-based problem.
+- [ ] Implement a queue-based problem.
+- [ ] Use a priority queue for task scheduling.
 - [ ] Implement an LRU cache.
-- [ ] Solve DSA problems using Java Collections.
 - [ ] Compare different collection implementations.
+- [ ] Solve selected searching and sorting problems.
 
-### Completion Criteria
+**Concepts required**
+- Stack and Deque.
+- Queue.
+- PriorityQueue.
+- Hashing.
+- HashMap internal working.
+- Collision handling.
+- Time and space complexity.
+- ConcurrentHashMap awareness.
 
-- [ ] Can select appropriate collections for different use cases.
-- [ ] Understands the internal working of HashMap.
-- [ ] Understands hashing and collision handling.
-- [ ] Can implement custom sorting.
-- [ ] Understands the performance trade-offs of common collections.
+**Done when**
+- [ ] You can choose appropriate data structures for different problems.
+- [ ] You understand the performance trade-offs of common collections.
 
----
+## 3. Generics
 
-## 6. Generics
+### Exercise 20 — Generic Utility Library
 
-### Learning Objectives
-- Understand Java generics and compile-time type safety.
-- Create reusable generic classes and methods.
-- Use bounded type parameters and wildcards appropriately.
-
-### Topics
-
-- [ ] Generic classes.
-- [ ] Generic methods.
-- [ ] Generic interfaces.
-- [ ] Bounded type parameters.
-- [ ] Wildcards.
-- [ ] Upper bounds.
-- [ ] Lower bounds.
-- [ ] Type erasure.
-- [ ] Generic best practices.
-
-### Practical Tasks
-
+**Requirements**
 - [ ] Implement a generic Pair class.
 - [ ] Implement generic utility methods.
-- [ ] Create a generic repository.
+- [ ] Build a generic repository abstraction.
 - [ ] Implement a generic data structure.
+- [ ] Support bounded types where appropriate.
 
-### Completion Criteria
+**Concepts required**
+- Generic classes.
+- Generic methods.
+- Generic interfaces.
+- Bounded type parameters.
+- Wildcards.
+- Upper and lower bounds.
+- Type erasure.
+- Generic type safety.
 
-- [ ] Can create generic classes and methods.
-- [ ] Can use bounded wildcards.
-- [ ] Understands type safety.
-- [ ] Understands type erasure and its limitations.
+**Done when**
+- [ ] Generic components work with different data types.
+- [ ] Type safety is maintained.
+- [ ] Wildcards and bounds are used appropriately.
 
----
+## 4. Functional Programming and Streams
 
-## 7. Functional Programming and Modern Java
+### Exercise 21 — Employee Data Processing Application
 
-### Learning Objectives
-- Understand functional programming concepts in Java.
-- Write concise code using lambda expressions and method references.
-- Process collections using the Stream API.
-- Understand modern Java language features.
-
-### Topics
-
-- [ ] Functional interfaces.
-- [ ] Lambda expressions.
-- [ ] Method references.
-- [ ] Predicate.
-- [ ] Function.
-- [ ] Consumer.
-- [ ] Supplier.
-- [ ] Optional.
-- [ ] Stream API.
-- [ ] Intermediate and terminal operations.
-- [ ] Filtering and mapping.
-- [ ] flatMap.
-- [ ] Sorting and reduction.
-- [ ] Collectors.
-- [ ] Grouping and partitioning.
-- [ ] Parallel streams.
-- [ ] Default and static interface methods.
-- [ ] Records.
-- [ ] Sealed classes.
-- [ ] Switch expressions.
-- [ ] Pattern matching.
-- [ ] Text blocks.
-- [ ] Date and Time API.
-
-### Practical Tasks
-
-- [ ] Filter and transform collections using streams.
+**Requirements**
+- [ ] Maintain a collection of employees.
+- [ ] Filter employees by department.
+- [ ] Sort by salary and name.
+- [ ] Calculate average salary.
 - [ ] Group employees by department.
-- [ ] Implement data aggregation using streams.
-- [ ] Refactor imperative code using functional programming.
-- [ ] Build a small employee data processing application.
+- [ ] Find the highest-paid employee.
+- [ ] Generate summary reports.
 
-### Completion Criteria
+**Concepts required**
+- Functional interfaces.
+- Lambda expressions.
+- Method references.
+- Predicate.
+- Function.
+- Consumer.
+- Supplier.
+- Optional.
+- Stream API.
+- Intermediate and terminal operations.
+- Filter, map, and flatMap.
+- Sorting and reduction.
+- Collectors.
+- Grouping and partitioning.
 
-- [ ] Can use lambda expressions and functional interfaces.
-- [ ] Can process collections using streams.
-- [ ] Can use Optional appropriately.
-- [ ] Understands when functional programming is beneficial.
-- [ ] Can use important modern Java language features.
+**Implementation constraint**
+- [ ] Implement selected operations using traditional loops.
+- [ ] Reimplement them using streams.
+- [ ] Compare readability and suitability.
 
----
+**Done when**
+- [ ] Collection transformations work correctly.
+- [ ] Streams are used appropriately.
+- [ ] You understand when a normal loop is preferable.
 
-## 8. File Handling and I/O
+## 5. Modern Java Features
 
-### Learning Objectives
-- Read and write files using Java.
-- Understand Java's I/O and NIO APIs.
-- Process structured data.
-- Manage file resources safely.
+### Exercise 22 — Refactor an Existing Application
 
-### Topics
+**Requirements**
+- [ ] Refactor selected domain models.
+- [ ] Replace suitable data-holder classes with records.
+- [ ] Use switch expressions where appropriate.
+- [ ] Use pattern matching where useful.
+- [ ] Introduce sealed classes for a restricted hierarchy.
+- [ ] Use text blocks for multiline content.
+- [ ] Use the Java Date and Time API for date-related operations.
 
-- [ ] File and Path APIs.
-- [ ] FileInputStream and FileOutputStream.
-- [ ] FileReader and FileWriter.
-- [ ] BufferedReader and BufferedWriter.
-- [ ] NIO and NIO.2.
-- [ ] Serialization and deserialization.
-- [ ] JSON processing.
-- [ ] Properties files.
-- [ ] Resource management.
+**Concepts required**
+- Records.
+- Sealed classes.
+- Switch expressions.
+- Pattern matching.
+- Text blocks.
+- Default and static interface methods.
+- Local variable type inference.
+- Date and Time API.
 
-### Practical Tasks
+**Done when**
+- [ ] Modern Java features are used where they improve the implementation.
+- [ ] Existing behavior is preserved.
 
-- [ ] Build a file-based contact manager.
-- [ ] Read and write CSV files.
-- [ ] Read and write JSON files.
-- [ ] Implement a file-processing utility.
-- [ ] Implement object serialization and deserialization.
+## 6. File Handling and I/O
 
-### Completion Criteria
+### Exercise 23 — File-Based Data Management System
 
-- [ ] Can independently read and write files.
-- [ ] Can process structured data.
-- [ ] Can use Java NIO APIs.
-- [ ] Can manage resources safely.
+**Requirements**
+- [ ] Store application records in files.
+- [ ] Read and update existing records.
+- [ ] Import and export CSV data.
+- [ ] Read and write JSON.
+- [ ] Maintain application configuration using properties files.
+- [ ] Handle missing and corrupted files.
 
----
+**Concepts required**
+- File and Path APIs.
+- FileInputStream and FileOutputStream.
+- FileReader and FileWriter.
+- BufferedReader and BufferedWriter.
+- Java NIO and NIO.2.
+- Resource management.
+- Serialization and deserialization.
+- JSON processing.
 
-## 9. Multithreading and Concurrency
+**Done when**
+- [ ] Data can be read and written reliably.
+- [ ] File errors are handled.
+- [ ] Resources are managed safely.
 
-### Learning Objectives
-- Understand Java's threading model.
-- Execute multiple tasks concurrently.
-- Handle shared resources safely.
-- Understand synchronization and concurrency utilities.
+## 7. Concurrency and Multithreading
 
-### Topics
+### Exercise 24 — Concurrent File Processor
 
-- [ ] Processes and threads.
-- [ ] Thread lifecycle.
-- [ ] Thread class and Runnable.
-- [ ] Callable and Future.
-- [ ] Thread synchronization.
-- [ ] Race conditions.
-- [ ] Deadlocks.
-- [ ] Volatile keyword.
-- [ ] Atomic variables.
-- [ ] Locks and ReentrantLock.
-- [ ] ExecutorService.
-- [ ] Thread pools.
-- [ ] CompletableFuture.
-- [ ] Concurrent Collections.
-- [ ] Java Memory Model.
-- [ ] Virtual Threads.
+**Requirements**
+- [ ] Process multiple files concurrently.
+- [ ] Compare sequential and concurrent execution.
+- [ ] Track processing results.
+- [ ] Handle task failures.
+- [ ] Prevent unsafe shared-state modification.
 
-### Practical Tasks
+**Concepts required**
+- Processes and threads.
+- Thread lifecycle.
+- Thread and Runnable.
+- Callable and Future.
+- ExecutorService.
+- Thread pools.
+- Synchronization.
+- Race conditions.
+- Atomic variables.
+- Volatile.
+- Locks and ReentrantLock.
 
-- [ ] Implement multithreaded file processing.
-- [ ] Build a producer-consumer application.
-- [ ] Implement concurrent task execution.
-- [ ] Demonstrate and resolve a race condition.
-- [ ] Implement a task executor using ExecutorService.
+### Exercise 25 — Producer-Consumer System
 
-### Completion Criteria
+**Requirements**
+- [ ] Implement producers generating tasks.
+- [ ] Implement consumers processing tasks.
+- [ ] Maintain a shared task queue.
+- [ ] Prevent race conditions.
+- [ ] Handle shutdown safely.
+- [ ] Compare different concurrency approaches.
 
-- [ ] Can create and manage threads.
-- [ ] Understands synchronization and thread safety.
-- [ ] Can use ExecutorService and CompletableFuture.
-- [ ] Understands race conditions and deadlocks.
-- [ ] Understands when concurrency is appropriate.
+**Concepts required**
+- BlockingQueue.
+- Concurrent collections.
+- Deadlocks.
+- Thread safety.
+- Java Memory Model.
+- CompletableFuture.
+- Virtual threads.
 
----
+**Done when**
+- [ ] Concurrent tasks execute correctly.
+- [ ] Shared data is protected.
+- [ ] You can identify race conditions and deadlocks.
+- [ ] You understand when concurrency is useful.
 
-## 10. JVM Internals and Memory Management
+## 8. JVM and Runtime Exploration
 
-### Learning Objectives
-- Understand how Java applications execute internally.
-- Understand JVM memory management.
-- Understand garbage collection and JIT compilation.
-- Identify basic memory and performance problems.
+### Exercise 26 — Java Runtime Investigation
 
-### Topics
-
-- [ ] JVM architecture.
-- [ ] Class loading mechanism.
-- [ ] Bytecode fundamentals.
-- [ ] Stack and Heap memory.
-- [ ] Garbage Collection.
-- [ ] Garbage Collection algorithms.
-- [ ] Strong, Weak, Soft, and Phantom references.
-- [ ] Memory leaks.
-- [ ] JIT compilation.
-- [ ] JVM arguments and options.
-- [ ] JVM monitoring and profiling.
-
-### Practical Tasks
-
+**Requirements**
 - [ ] Inspect JVM memory usage.
+- [ ] Observe object allocation and lifecycle.
 - [ ] Explore garbage collection logs.
-- [ ] Demonstrate object lifecycle.
-- [ ] Profile a Java application.
-- [ ] Investigate a basic memory leak.
+- [ ] Investigate a memory leak.
+- [ ] Profile an application.
+- [ ] Observe application behavior under different JVM options.
 
-### Completion Criteria
+**Concepts required**
+- JVM architecture.
+- Class loading.
+- Bytecode.
+- Stack and heap.
+- Garbage collection.
+- Strong, weak, soft, and phantom references.
+- JIT compilation.
+- JVM arguments.
+- Monitoring and profiling.
 
-- [ ] Can explain Java's execution lifecycle.
-- [ ] Understands stack and heap memory.
-- [ ] Understands garbage collection.
-- [ ] Can identify basic memory problems.
-- [ ] Can inspect JVM runtime information.
+**Done when**
+- [ ] You can explain the Java execution lifecycle.
+- [ ] You can inspect basic JVM runtime information.
+- [ ] You can identify basic memory and performance problems.
 
----
+## 9. Additional Java Platform Features
 
-## 11. Additional Java Language and Platform Features
+### Exercise 27 — Java Platform Utilities
 
-### Learning Objectives
-- Consolidate knowledge of Java's standard library and language capabilities.
-- Explore important APIs used in real-world Java development.
+**Requirements**
+- [ ] Implement validation using regular expressions.
+- [ ] Create and use a custom annotation.
+- [ ] Inspect class metadata using reflection.
+- [ ] Explore Java networking.
+- [ ] Understand a basic client-server communication example.
 
-### Topics
+**Concepts required**
+- Annotations.
+- Custom annotations.
+- Reflection API.
+- Regular expressions.
+- Networking fundamentals.
+- Socket programming.
+- Java security fundamentals.
+- Internationalization.
+- Java modules (JPMS).
 
-- [ ] Annotations and custom annotations.
-- [ ] Reflection API.
-- [ ] Java Date and Time API in depth.
-- [ ] Regular expressions.
-- [ ] Networking fundamentals using Java.
-- [ ] Socket programming basics.
-- [ ] Internationalization fundamentals.
-- [ ] Java modules (JPMS).
-- [ ] Java security fundamentals.
+**Done when**
+- [ ] You have used these APIs in practical examples.
+- [ ] You understand their common use cases and limitations.
 
-### Practical Tasks
-
-- [ ] Create a custom annotation.
-- [ ] Explore reflection to inspect class metadata.
-- [ ] Implement regular expression validation.
-- [ ] Build a basic socket-based client-server application.
-
-### Completion Criteria
-
-- [ ] Can use important Java standard library APIs.
-- [ ] Understands annotations and reflection.
-- [ ] Understands basic Java networking.
-- [ ] Can identify appropriate use cases for advanced platform features.
-
----
-
-# TRACK 2: JAVA BACKEND DEVELOPMENT
-
-**Objective:** Apply Java knowledge to build professional backend applications using industry-standard frameworks, databases, development tools, testing practices, and deployment technologies.
+Advanced reflection, custom framework construction, deep serialization internals, and detailed module-system internals are optional explorations rather than prerequisites for Spring Boot.
 
 ---
 
-## 12. Development Tools and Engineering Practices
+# Phase 4: Java Tools, Testing and Engineering Practices
 
-### Learning Objectives
-- Manage Java backend projects professionally.
-- Understand dependency management and build automation.
-- Write maintainable and testable code.
-- Apply standard software development practices.
+**Objective:** Learn to manage Java projects professionally, debug applications, automate builds, and verify application behavior.
 
-### Topics
+## 1. Git and Maven
 
-**Git and GitHub**
-- [ ] Understand branching and merging workflows.
-- [ ] Pull requests and code reviews.
-- [ ] Merge conflict resolution.
-- [ ] Git tags and releases.
-- [ ] Repository management best practices.
+### Exercise 28 — Convert Existing Java Projects into Maven Projects
 
-**Maven**
-- [ ] Build automation fundamentals.
-- [ ] Maven project structure.
-- [ ] pom.xml.
-- [ ] Dependencies and dependency scopes.
-- [ ] Maven lifecycle.
-- [ ] Maven plugins.
-- [ ] Multi-module Maven projects.
-- [ ] Packaging JAR files.
+**Requirements**
+- [ ] Convert an existing Java project into a Maven project.
+- [ ] Configure dependencies.
+- [ ] Organize source and test directories.
+- [ ] Build the application.
+- [ ] Package an executable JAR.
+- [ ] Run the packaged application.
 
-**Gradle**
-- [ ] Gradle fundamentals.
-- [ ] build.gradle.
-- [ ] Dependency management.
-- [ ] Gradle build lifecycle.
-- [ ] Understand Maven vs Gradle.
+**Concepts required**
+- Maven project structure.
+- `pom.xml`.
+- Dependencies and dependency scopes.
+- Maven lifecycle.
+- Maven plugins.
+- JAR packaging.
+- Build automation.
 
-**Engineering Practices**
-- [ ] Debugging using VS Code.
-- [ ] Breakpoints and watches.
-- [ ] Logging using SLF4J and Logback.
-- [ ] Clean code principles.
-- [ ] SOLID principles.
-- [ ] Common design patterns.
-- [ ] Basic UML and class diagrams.
+**Done when**
+- [ ] The application builds independently of the IDE.
+- [ ] Dependencies are managed through Maven.
+- [ ] The packaged application runs successfully.
 
-### Practical Tasks
+### Optional Reference — Git Workflow
 
-- [ ] Convert a Java project into a Maven project.
-- [ ] Add and manage external dependencies.
-- [ ] Create an executable JAR.
-- [ ] Create a multi-module Maven project.
-- [ ] Configure application logging.
-- [ ] Debug an application using breakpoints.
-- [ ] Refactor a poorly structured application.
+Basic Git use is already familiar. Continue using Git for normal project version control; use this section only if you need to practise a specific collaboration workflow. It is not a prerequisite for progressing through the Java exercises.
 
-### Completion Criteria
 
-- [ ] Can independently manage Maven projects.
-- [ ] Can manage dependencies and package applications.
-- [ ] Can debug Java applications.
-- [ ] Can implement structured logging.
-- [ ] Can apply clean code and SOLID principles.
+**Requirements**
+- [ ] Manage a project using Git.
+- [ ] Create feature branches.
+- [ ] Merge changes.
+- [ ] Resolve merge conflicts.
+- [ ] Create releases using tags.
+- [ ] Use pull requests and code reviews.
 
----
+**Concepts required**
+- Git commits.
+- Branching and merging.
+- Pull requests.
+- Merge conflict resolution.
+- Tags and releases.
+- Repository management.
 
-## 13. Software Testing
+**Done when**
+- [ ] You can manage a project using a normal Git workflow.
 
-### Learning Objectives
-- Understand automated software testing.
-- Write unit and integration tests.
-- Isolate dependencies during testing.
-- Verify application behavior and edge cases.
+## 2. Debugging and Code Quality
 
-### Topics
+### Exercise 30 — Debug and Refactor an Existing Application
 
-- [ ] Software testing fundamentals.
-- [ ] Unit testing.
-- [ ] JUnit 5.
-- [ ] Assertions.
-- [ ] Test lifecycle.
-- [ ] Parameterized tests.
-- [ ] Mockito.
-- [ ] Mocking and stubbing.
-- [ ] Integration testing.
-- [ ] Test coverage.
-- [ ] Test-driven development fundamentals.
+**Requirements**
+- [ ] Work with a deliberately poorly structured application.
+- [ ] Find and fix existing bugs.
+- [ ] Identify duplicated logic.
+- [ ] Improve class responsibilities.
+- [ ] Improve method names and organization.
+- [ ] Add structured logging.
+- [ ] Refactor without breaking existing behavior.
 
-### Practical Tasks
+**Concepts required**
+- VS Code debugger.
+- Breakpoints and watches.
+- Logging with SLF4J and Logback.
+- Clean code.
+- SOLID principles.
+- Basic design patterns.
+- UML and class diagrams.
 
-- [ ] Write unit tests for existing Java applications.
-- [ ] Mock dependencies using Mockito.
-- [ ] Test exception scenarios.
+**Done when**
+- [ ] Bugs are identified and fixed.
+- [ ] The application is easier to understand and maintain.
+- [ ] Existing behavior remains correct.
+
+## 3. Automated Testing
+
+### Exercise 31 — Build a Test Suite for Existing Applications
+
+**Requirements**
+- [ ] Write tests for the banking application.
+- [ ] Test successful operations.
+- [ ] Test invalid operations.
+- [ ] Test boundary conditions.
+- [ ] Test custom exceptions.
+- [ ] Use parameterized tests.
+- [ ] Generate a test coverage report.
+
+**Concepts required**
+- Testing fundamentals.
+- Unit testing.
+- JUnit 5.
+- Assertions.
+- Test lifecycle.
+- Parameterized tests.
+- Test coverage.
+- Test-driven development fundamentals.
+
+### Exercise 32 — Test Applications with Dependencies
+
+**Requirements**
+- [ ] Test service classes with dependencies.
+- [ ] Mock external dependencies.
+- [ ] Test success and failure scenarios.
 - [ ] Write integration tests.
-- [ ] Generate test coverage reports.
+- [ ] Test database interactions where applicable.
 
-### Completion Criteria
+**Concepts required**
+- Mockito.
+- Mocking and stubbing.
+- Dependency isolation.
+- Integration testing.
+- Test fixtures.
 
-- [ ] Can independently write unit tests.
-- [ ] Can mock external dependencies.
-- [ ] Can test success and failure scenarios.
-- [ ] Understands the difference between unit and integration testing.
+**Done when**
+- [ ] You can independently write unit and integration tests.
+- [ ] External dependencies can be isolated where appropriate.
+- [ ] Both successful and failed execution paths are tested.
 
----
+### Optional: Gradle
 
-## 14. SQL and Database Fundamentals
+Maven is the primary build tool for this roadmap. Explore Gradle after becoming comfortable with Maven.
 
-### Learning Objectives
-- Understand relational database concepts.
-- Design relational schemas.
-- Write SQL queries.
-- Understand transactions, indexes, and database performance.
-
-### Topics
-
-- [ ] Relational database fundamentals.
-- [ ] Tables, rows, and columns.
-- [ ] Primary and foreign keys.
-- [ ] Constraints.
-- [ ] SQL data types.
-- [ ] SELECT, INSERT, UPDATE, DELETE.
-- [ ] WHERE and ORDER BY.
-- [ ] GROUP BY and HAVING.
-- [ ] Aggregate functions.
-- [ ] Joins.
-- [ ] Subqueries.
-- [ ] Common Table Expressions.
-- [ ] Indexes.
-- [ ] Database normalization.
-- [ ] Transactions.
-- [ ] ACID properties.
-- [ ] Isolation levels.
-- [ ] Query optimization.
-- [ ] PostgreSQL.
-
-### Practical Tasks
-
-- [ ] Design a database for a library system.
-- [ ] Write CRUD queries.
-- [ ] Implement joins and aggregate queries.
-- [ ] Create indexes and examine query plans.
-- [ ] Implement transactions.
-- [ ] Practice SQL queries independently.
-
-### Completion Criteria
-
-- [ ] Can design relational database schemas.
-- [ ] Can independently write complex SQL queries.
-- [ ] Understands database normalization.
-- [ ] Understands transactions and isolation levels.
-- [ ] Understands indexing and basic query optimization.
+**Concepts to explore:** `build.gradle`, dependency management, build lifecycle, plugins, Maven versus Gradle.
 
 ---
 
-## 15. Java Database Connectivity (JDBC)
+# TRACK 2: BACKEND DEVELOPMENT
 
-### Learning Objectives
-- Connect Java applications to relational databases.
-- Execute SQL queries from Java.
-- Understand database connections and transaction management.
+# Phase 5: SQL, Databases and JDBC
 
-### Topics
+**Objective:** Understand relational databases and learn to interact with them directly from Java before introducing ORM frameworks.
 
-- [ ] JDBC architecture.
-- [ ] JDBC drivers.
-- [ ] Connection.
-- [ ] Statement and PreparedStatement.
-- [ ] ResultSet.
-- [ ] CRUD operations.
-- [ ] SQL injection prevention.
-- [ ] JDBC transactions.
-- [ ] Connection pooling.
-- [ ] HikariCP fundamentals.
+## 1. SQL and Database Design
 
-### Practical Tasks
+### Exercise 33 — Design a Library Database
 
-- [ ] Connect Java to PostgreSQL.
-- [ ] Implement CRUD operations using JDBC.
-- [ ] Implement transaction management.
-- [ ] Build a database-backed management application.
+**Requirements**
+- [ ] Design tables for books, authors, members, and borrowing records.
+- [ ] Define primary and foreign keys.
+- [ ] Add appropriate constraints.
+- [ ] Model relationships.
+- [ ] Prevent invalid data.
+- [ ] Insert realistic sample data.
 
-### Completion Criteria
+**Concepts required**
+- Relational database fundamentals.
+- Tables, rows, and columns.
+- Primary and foreign keys.
+- SQL data types.
+- Constraints.
+- One-to-one, one-to-many, and many-to-many relationships.
+- Database normalization.
+- PostgreSQL.
 
-- [ ] Can independently connect Java to PostgreSQL.
-- [ ] Can execute parameterized SQL queries.
-- [ ] Can manage transactions and connections.
-- [ ] Understands connection pooling.
+**Done when**
+- [ ] The schema represents the requirements correctly.
+- [ ] Referential integrity is maintained.
+- [ ] Invalid data is rejected.
+
+### Exercise 34 — SQL Query Practice
+
+**Requirements**
+Write queries that:
+- [ ] Retrieve records using filters.
+- [ ] Sort and paginate results.
+- [ ] Join related tables.
+- [ ] Calculate aggregates.
+- [ ] Group and filter grouped results.
+- [ ] Use subqueries.
+- [ ] Use Common Table Expressions.
+- [ ] Find missing and duplicate records.
+- [ ] Generate business reports.
+
+**Concepts required**
+- SELECT, INSERT, UPDATE, DELETE.
+- WHERE and ORDER BY.
+- GROUP BY and HAVING.
+- Aggregate functions.
+- INNER, LEFT, RIGHT, and other joins.
+- Subqueries.
+- Common Table Expressions.
+- PostgreSQL functions.
+
+**Done when**
+- [ ] You can independently write queries that satisfy realistic requirements.
+- [ ] You understand the results produced by different joins and aggregations.
+
+### Exercise 35 — Database Performance and Transactions
+
+**Requirements**
+- [ ] Add indexes to selected tables.
+- [ ] Inspect query execution plans.
+- [ ] Compare queries before and after indexing.
+- [ ] Implement multi-step transactions.
+- [ ] Simulate transaction failures.
+- [ ] Investigate concurrent updates.
+
+**Concepts required**
+- Indexes.
+- Query plans.
+- EXPLAIN and EXPLAIN ANALYZE.
+- ACID properties.
+- Transactions.
+- Isolation levels.
+- Locking.
+- Query optimization.
+
+**Done when**
+- [ ] Transactions preserve data consistency.
+- [ ] You can interpret basic query plans.
+- [ ] You understand common indexing and transaction trade-offs.
+
+## 2. JDBC
+
+### Exercise 36 — Java Database-Backed Management Application
+
+**Requirements**
+- [ ] Connect a Java application to PostgreSQL.
+- [ ] Perform CRUD operations.
+- [ ] Search and filter records.
+- [ ] Execute parameterized queries.
+- [ ] Handle SQL errors.
+- [ ] Manage transactions.
+- [ ] Ensure database connections are closed correctly.
+
+**Concepts required**
+- JDBC architecture.
+- JDBC drivers.
+- Connection.
+- Statement and PreparedStatement.
+- ResultSet.
+- SQL injection prevention.
+- JDBC transactions.
+- Connection pooling.
+- HikariCP fundamentals.
+
+**Done when**
+- [ ] The Java application can independently interact with PostgreSQL.
+- [ ] SQL queries use parameters safely.
+- [ ] Transactions and connections are managed correctly.
 
 ---
 
-## 16. Spring Framework Fundamentals
+# Phase 6: Spring and Spring Boot
 
-### Learning Objectives
-- Understand the Spring ecosystem.
-- Understand dependency injection and inversion of control.
-- Understand how Spring manages application components.
+**Objective:** Learn to build backend applications using the Spring ecosystem and expose functionality through REST APIs.
 
-### Topics
+## 1. Spring Framework Fundamentals
 
-- [ ] Spring Framework architecture.
-- [ ] Inversion of Control (IoC).
-- [ ] Dependency Injection (DI).
-- [ ] Spring Beans.
-- [ ] Bean lifecycle.
-- [ ] ApplicationContext.
-- [ ] Component scanning.
-- [ ] Configuration classes.
-- [ ] Bean scopes.
-- [ ] Spring annotations.
-- [ ] Aspect-Oriented Programming (AOP).
+### Exercise 37 — Build an Application Using Spring Core
 
-### Practical Tasks
+**Requirements**
+- [ ] Create a small application with multiple components.
+- [ ] Separate application responsibilities.
+- [ ] Inject dependencies between components.
+- [ ] Configure beans.
+- [ ] Experiment with different bean scopes.
+- [ ] Compare manual configuration and component scanning.
 
-- [ ] Create a basic Spring application.
-- [ ] Implement dependency injection.
-- [ ] Configure beans manually and through annotations.
-- [ ] Explore bean lifecycle.
+**Concepts required**
+- Spring Framework.
+- Inversion of Control.
+- Dependency Injection.
+- Spring Beans.
+- Bean lifecycle.
+- ApplicationContext.
+- Component scanning.
+- Configuration classes.
+- Bean scopes.
+- Spring annotations.
+- Aspect-Oriented Programming fundamentals.
 
-### Completion Criteria
+**Done when**
+- [ ] Components are managed by Spring.
+- [ ] Dependencies are injected correctly.
+- [ ] You understand how Spring creates and manages beans.
 
-- [ ] Understands IoC and DI.
-- [ ] Can configure and manage Spring beans.
-- [ ] Can explain how Spring manages application components.
+## 2. Spring Boot Application
 
----
+### Exercise 38 — Build a Spring Boot Application
 
-## 17. Spring Boot
-
-### Learning Objectives
-- Understand Spring Boot architecture.
-- Create standalone backend applications.
-- Configure and manage Spring Boot applications.
-
-### Topics
-
-- [ ] Spring Boot architecture.
-- [ ] Spring Initializr.
-- [ ] Auto-configuration.
-- [ ] Starter dependencies.
-- [ ] Application properties and YAML.
-- [ ] Configuration properties.
-- [ ] Profiles.
-- [ ] Dependency injection.
-- [ ] Spring Boot Actuator.
-- [ ] Logging and debugging.
-- [ ] Externalized configuration.
-
-### Practical Tasks
-
-- [ ] Create a Spring Boot application.
+**Requirements**
+- [ ] Create a Spring Boot project.
+- [ ] Configure dependencies.
+- [ ] Organize application packages.
 - [ ] Configure application properties.
-- [ ] Create multiple environment profiles.
-- [ ] Explore Actuator endpoints.
-- [ ] Package and run a Spring Boot application.
+- [ ] Support multiple environments.
+- [ ] Configure logging.
+- [ ] Expose application health information.
+- [ ] Package and run the application.
 
-### Completion Criteria
+**Concepts required**
+- Spring Initializr.
+- Spring Boot architecture.
+- Auto-configuration.
+- Starter dependencies.
+- Application properties and YAML.
+- Configuration properties.
+- Profiles.
+- Externalized configuration.
+- Spring Boot Actuator.
 
-- [ ] Can independently create and run Spring Boot applications.
-- [ ] Can configure applications for different environments.
-- [ ] Understands auto-configuration and starter dependencies.
+**Done when**
+- [ ] The application starts independently.
+- [ ] Configuration changes work across environments.
+- [ ] Health information is accessible.
+
+## 3. REST API Development
+
+### Exercise 39 — Build a Task Management REST API
+
+**Requirements**
+- [ ] Create, retrieve, update, and delete tasks.
+- [ ] Retrieve tasks by ID.
+- [ ] Filter tasks by status.
+- [ ] Search tasks.
+- [ ] Support pagination and sorting.
+- [ ] Validate incoming requests.
+- [ ] Return appropriate HTTP status codes.
+- [ ] Handle errors consistently.
+- [ ] Document the API.
+
+**Concepts required**
+- HTTP and HTTPS.
+- REST architecture.
+- HTTP methods and status codes.
+- Request and response headers.
+- JSON.
+- REST controllers.
+- RequestBody and ResponseBody.
+- PathVariable and RequestParam.
+- DTOs.
+- Request validation.
+- Global exception handling.
+- Pagination and sorting.
+- Filtering and searching.
+- API versioning.
+- OpenAPI and Swagger.
+- CORS.
+
+**Done when**
+- [ ] All endpoints work as specified.
+- [ ] Invalid requests return meaningful errors.
+- [ ] API documentation accurately describes the endpoints.
+- [ ] API behavior is tested.
 
 ---
 
-## 18. REST API Development
+# Phase 7: Persistence and Backend Security
 
-### Learning Objectives
-- Understand REST architecture.
-- Design and implement RESTful APIs.
-- Handle requests, responses, validation, and errors.
-- Document and test APIs.
+**Objective:** Build database-backed backend applications and secure them using standard authentication and authorization mechanisms.
 
-### Topics
+## 1. Spring Data JPA and Hibernate
 
-- [ ] HTTP and HTTPS.
-- [ ] REST architecture.
-- [ ] HTTP methods.
-- [ ] HTTP status codes.
-- [ ] Request and response headers.
-- [ ] JSON.
-- [ ] REST controllers.
-- [ ] RequestBody and ResponseBody.
-- [ ] PathVariable and RequestParam.
-- [ ] DTOs.
-- [ ] Request validation.
-- [ ] Global exception handling.
-- [ ] Pagination and sorting.
-- [ ] Filtering and searching.
-- [ ] API versioning.
-- [ ] OpenAPI and Swagger.
-- [ ] CORS.
+### Exercise 40 — Convert the Task API into a Database-Backed Application
 
-### Practical Tasks
-
-- [ ] Build a Task Management REST API.
-- [ ] Implement CRUD endpoints.
-- [ ] Implement request validation.
-- [ ] Implement global exception handling.
-- [ ] Implement pagination and filtering.
-- [ ] Document APIs using Swagger.
-
-### Completion Criteria
-
-- [ ] Can independently design and implement REST APIs.
-- [ ] Can handle request validation and errors.
-- [ ] Can implement pagination and filtering.
-- [ ] Can document and test APIs.
-
----
-
-## 19. Spring Data JPA and Hibernate
-
-### Learning Objectives
-- Understand ORM and persistence.
-- Integrate relational databases using JPA and Hibernate.
-- Model entity relationships.
-- Understand database query execution and transaction management.
-
-### Topics
-
-- [ ] ORM fundamentals.
-- [ ] JPA vs Hibernate.
-- [ ] Entities.
-- [ ] Entity lifecycle.
-- [ ] One-to-One.
-- [ ] One-to-Many.
-- [ ] Many-to-One.
-- [ ] Many-to-Many.
-- [ ] Spring Data repositories.
-- [ ] Derived query methods.
-- [ ] JPQL.
-- [ ] Native SQL queries.
-- [ ] Lazy and eager loading.
-- [ ] N+1 query problem.
-- [ ] Cascading and orphan removal.
-- [ ] Transactions.
-- [ ] Database auditing.
-- [ ] Flyway or Liquibase.
-
-### Practical Tasks
-
-- [ ] Integrate PostgreSQL with Spring Boot.
-- [ ] Implement entity relationships.
-- [ ] Implement repository queries.
-- [ ] Implement pagination and sorting.
-- [ ] Investigate and resolve N+1 queries.
+**Requirements**
+- [ ] Integrate PostgreSQL.
+- [ ] Persist tasks.
+- [ ] Implement repository operations.
+- [ ] Model relationships between users and tasks.
+- [ ] Support filtering and pagination.
 - [ ] Implement database migrations.
+- [ ] Handle transaction boundaries.
 
-### Completion Criteria
+**Concepts required**
+- ORM fundamentals.
+- JPA versus Hibernate.
+- Entities and entity lifecycle.
+- Spring Data repositories.
+- Derived query methods.
+- JPQL.
+- Native SQL queries.
+- One-to-one relationships.
+- One-to-many relationships.
+- Many-to-one relationships.
+- Many-to-many relationships.
+- Lazy and eager loading.
+- Cascading and orphan removal.
+- Transactions.
+- Flyway or Liquibase.
 
-- [ ] Can independently integrate Spring Boot with PostgreSQL.
-- [ ] Can model entity relationships.
-- [ ] Understands ORM behavior.
-- [ ] Understands transaction management.
-- [ ] Can identify basic ORM performance problems.
+**Done when**
+- [ ] Application data persists in PostgreSQL.
+- [ ] Relationships are correctly represented.
+- [ ] Repository queries work as required.
+- [ ] Schema changes are managed through migrations.
+
+### Exercise 41 — Investigate ORM Performance
+
+**Requirements**
+- [ ] Identify unnecessary database queries.
+- [ ] Reproduce an N+1 query problem.
+- [ ] Investigate lazy and eager loading.
+- [ ] Improve selected queries.
+- [ ] Compare query counts and execution behavior.
+
+**Concepts required**
+- Hibernate SQL generation.
+- Lazy and eager loading.
+- N+1 problem.
+- Fetch joins.
+- Entity graphs.
+- Transaction boundaries.
+- Database indexes.
+
+**Done when**
+- [ ] You can identify basic ORM performance problems.
+- [ ] You can choose appropriate fetching strategies.
+
+## 2. Authentication and Authorization
+
+### Exercise 42 — User Authentication System
+
+**Requirements**
+- [ ] Implement user registration.
+- [ ] Implement login.
+- [ ] Store passwords securely.
+- [ ] Authenticate users.
+- [ ] Implement logout or token invalidation where applicable.
+- [ ] Handle invalid credentials.
+- [ ] Prevent unauthorized access.
+
+**Concepts required**
+- Authentication and authorization.
+- Spring Security architecture.
+- Security filters.
+- Password hashing.
+- Session-based authentication.
+- JWT authentication.
+- Security configuration.
+- CORS and CSRF.
+- Authentication best practices.
+
+**Done when**
+- [ ] Users can authenticate securely.
+- [ ] Passwords are never stored as plaintext.
+- [ ] Protected endpoints reject unauthenticated requests.
+
+### Exercise 43 — Role-Based Access Control
+
+**Requirements**
+- [ ] Support multiple roles.
+- [ ] Restrict selected operations to administrators.
+- [ ] Allow users to access only their permitted resources.
+- [ ] Prevent users from accessing another user's private data.
+- [ ] Test authorization failures.
+
+**Concepts required**
+- Role-based access control.
+- Authorities and roles.
+- Method-level security.
+- Authorization rules.
+- JWT claims where applicable.
+
+**Done when**
+- [ ] Access restrictions are enforced consistently.
+- [ ] Both role-level and resource-level authorization work.
+
+### Exercise 44 — OAuth2 and OpenID Connect Integration
+
+**Requirements**
+- [ ] Integrate an external identity provider.
+- [ ] Authenticate using an OAuth2/OIDC flow.
+- [ ] Configure a resource server.
+- [ ] Validate incoming tokens.
+- [ ] Protect API endpoints.
+
+**Concepts required**
+- OAuth 2.0 fundamentals.
+- OpenID Connect.
+- Authorization code flow.
+- Access and refresh tokens.
+- Resource server configuration.
+- Token validation.
+- Identity provider integration.
+
+**Done when**
+- [ ] The application can authenticate through an external identity provider.
+- [ ] Protected APIs validate tokens correctly.
 
 ---
 
-## 20. Spring Security
+# Phase 8: Backend Engineering and Architecture
 
-### Learning Objectives
-- Understand authentication and authorization.
-- Secure backend applications.
-- Implement role-based access control.
-- Understand modern authentication protocols.
+**Objective:** Move beyond implementing endpoints and learn to design maintainable, scalable, and reliable backend systems.
 
-### Topics
+## 1. Application Architecture
 
-- [ ] Authentication and authorization.
-- [ ] Spring Security architecture.
-- [ ] Security filters.
-- [ ] Password hashing.
-- [ ] Role-based access control.
-- [ ] Session-based authentication.
-- [ ] JWT authentication.
-- [ ] OAuth 2.0 fundamentals.
-- [ ] OpenID Connect fundamentals.
-- [ ] Resource server configuration.
-- [ ] Method-level security.
-- [ ] CORS and CSRF.
-- [ ] Security best practices.
+### Exercise 45 — Refactor a Growing Backend Application
 
-### Practical Tasks
+**Requirements**
+- [ ] Start with a working backend application.
+- [ ] Separate controllers, services, and repositories.
+- [ ] Separate API DTOs from persistence entities.
+- [ ] Organize business logic.
+- [ ] Reduce coupling.
+- [ ] Introduce appropriate abstractions.
+- [ ] Document the application structure.
 
-- [ ] Implement user registration and login.
-- [ ] Implement password hashing.
-- [ ] Implement JWT authentication.
-- [ ] Implement role-based authorization.
-- [ ] Secure selected API endpoints.
-- [ ] Integrate an OAuth 2.0 / OIDC identity provider.
+**Concepts required**
+- Layered architecture.
+- Controller-Service-Repository pattern.
+- DTO and entity separation.
+- Clean architecture fundamentals.
+- SOLID principles.
+- Dependency inversion.
+- Common design patterns.
+- UML and class diagrams.
 
-### Completion Criteria
+**Done when**
+- [ ] Application responsibilities are clearly separated.
+- [ ] Business logic is not unnecessarily coupled to HTTP or persistence.
+- [ ] The architecture remains understandable as features grow.
 
-- [ ] Can secure REST APIs.
-- [ ] Can implement authentication and authorization.
-- [ ] Understands JWT.
-- [ ] Understands OAuth 2.0 and OpenID Connect.
-- [ ] Can implement role-based access control.
+## 2. Caching
+
+### Exercise 46 — Add Caching to an Existing Backend
+
+**Requirements**
+- [ ] Identify frequently requested data.
+- [ ] Cache selected responses.
+- [ ] Handle cache expiration.
+- [ ] Update or invalidate cached data after changes.
+- [ ] Compare behavior with and without caching.
+
+**Concepts required**
+- Caching fundamentals.
+- Cache-aside pattern.
+- TTL.
+- Cache invalidation.
+- Redis.
+- Spring Cache abstraction.
+- Cache consistency.
+
+**Done when**
+- [ ] Caching reduces unnecessary database access.
+- [ ] Stale data is handled according to defined requirements.
+
+## 3. Asynchronous Processing and Messaging
+
+### Exercise 47 — Background Task Processing
+
+**Requirements**
+- [ ] Move long-running operations out of synchronous request handling.
+- [ ] Process background tasks.
+- [ ] Track task status.
+- [ ] Handle failures.
+- [ ] Retry eligible tasks.
+- [ ] Avoid processing the same task multiple times where required.
+
+**Concepts required**
+- Asynchronous processing.
+- ExecutorService.
+- CompletableFuture.
+- Spring asynchronous execution.
+- Message queues.
+- Retry mechanisms.
+- Idempotency.
+
+### Exercise 48 — Build a Kafka-Based Event Processing System
+
+**Requirements**
+- [ ] Create a producer.
+- [ ] Create a consumer.
+- [ ] Publish events when business operations occur.
+- [ ] Process events asynchronously.
+- [ ] Handle failed messages.
+- [ ] Demonstrate consumer recovery.
+- [ ] Prevent duplicate processing where appropriate.
+
+**Concepts required**
+- Messaging fundamentals.
+- Kafka topics.
+- Producers and consumers.
+- Partitions.
+- Consumer groups.
+- Offsets.
+- Message serialization.
+- Delivery semantics.
+- Idempotent processing.
+
+**Done when**
+- [ ] Events are published and consumed correctly.
+- [ ] Consumer failures are handled.
+- [ ] You understand the trade-offs of asynchronous communication.
+
+## 4. Scheduled Jobs
+
+### Exercise 49 — Scheduled Processing System
+
+**Requirements**
+- [ ] Schedule recurring tasks.
+- [ ] Process pending records.
+- [ ] Handle failures.
+- [ ] Prevent unintended duplicate execution.
+- [ ] Record execution history.
+
+**Concepts required**
+- Scheduled jobs.
+- Spring scheduling.
+- Cron expressions.
+- Background execution.
+- Concurrency considerations.
+
+## 5. API Reliability and Advanced Backend Features
+
+### Exercise 50 — Harden an Existing REST API
+
+**Requirements**
+- [ ] Implement request rate limiting.
+- [ ] Implement idempotency for selected operations.
+- [ ] Support filtering and pagination efficiently.
+- [ ] Handle concurrent requests.
+- [ ] Add appropriate timeout and retry behavior.
+- [ ] Implement resilience for external service failures.
+
+**Concepts required**
+- Rate limiting.
+- Idempotency.
+- Timeouts and retries.
+- Resilience and fault tolerance.
+- Circuit breakers.
+- Concurrency.
+- HTTP caching.
+- API reliability.
+
+## 6. Real-Time Communication
+
+### Exercise 51 — Build a Real-Time Notification Feature
+
+**Requirements**
+- [ ] Notify users about selected application events.
+- [ ] Support real-time communication.
+- [ ] Handle disconnected clients.
+- [ ] Support multiple users.
+- [ ] Define appropriate event formats.
+
+**Concepts required**
+- WebSockets.
+- HTTP versus WebSocket.
+- Connection lifecycle.
+- Event-driven communication.
+- Basic real-time system design.
+
+## 7. Distributed Systems and Microservices
+
+### Exercise 52 — Split an Existing Application into Services
+
+**Requirements**
+- [ ] Identify separate business capabilities.
+- [ ] Split a suitable application into multiple services.
+- [ ] Define service APIs.
+- [ ] Implement service-to-service communication.
+- [ ] Handle service failures.
+- [ ] Consider data ownership.
+- [ ] Document the architecture.
+
+**Concepts required**
+- Distributed systems fundamentals.
+- Microservices fundamentals.
+- Service boundaries.
+- Service-to-service communication.
+- Synchronous versus asynchronous communication.
+- Distributed failure.
+- Resilience.
+- Data consistency.
+- Observability.
+
+**Done when**
+- [ ] You can explain the trade-offs between a monolith and microservices.
+- [ ] Services have clear responsibilities.
+- [ ] Failure scenarios are considered.
+
+Microservices should come after you have built and understood a well-structured monolithic application. Do not introduce distributed complexity without a genuine reason.
+
+## 8. Observability and Performance
+
+### Exercise 53 — Monitor and Investigate a Backend Application
+
+**Requirements**
+- [ ] Add structured logging.
+- [ ] Expose application health.
+- [ ] Monitor application metrics.
+- [ ] Investigate slow endpoints.
+- [ ] Identify expensive database queries.
+- [ ] Investigate an application failure using logs and metrics.
+
+**Concepts required**
+- Logging.
+- Metrics.
+- Distributed tracing fundamentals.
+- Spring Boot Actuator.
+- Observability.
+- Performance profiling.
+- Query optimization.
+- Error tracking.
+
+**Done when**
+- [ ] You can investigate basic application failures.
+- [ ] You can identify performance bottlenecks.
+- [ ] Application health and important metrics are observable.
 
 ---
 
-## 21. Backend Architecture and Engineering
+# Phase 9: Deployment and Production Practices
 
-### Learning Objectives
-- Design maintainable backend applications.
-- Understand common backend architectural patterns.
-- Implement advanced backend functionality.
-- Understand scalability and distributed systems fundamentals.
+**Objective:** Learn to package, containerize, deploy, and operate backend applications.
 
-### Topics
+## 1. Linux and Application Packaging
 
-**Application Architecture**
-- [ ] Layered architecture.
-- [ ] Controller-Service-Repository pattern.
-- [ ] DTO and entity separation.
-- [ ] Clean architecture fundamentals.
-- [ ] SOLID principles.
-- [ ] Design patterns.
-- [ ] Dependency management.
+### Exercise 54 — Run a Java Application Outside the IDE
 
-**Advanced Backend Concepts**
-- [ ] Caching.
-- [ ] Redis.
-- [ ] Asynchronous processing.
-- [ ] Message queues.
-- [ ] Kafka fundamentals.
-- [ ] Scheduled jobs.
-- [ ] WebSockets.
-- [ ] Rate limiting.
-- [ ] Idempotency.
-- [ ] Distributed systems fundamentals.
-- [ ] Microservices fundamentals.
-- [ ] Service-to-service communication.
-- [ ] Resilience and fault tolerance.
-- [ ] Observability and monitoring.
-
-### Practical Tasks
-
-- [ ] Implement caching using Redis.
-- [ ] Implement asynchronous task processing.
-- [ ] Build a Kafka producer and consumer.
-- [ ] Implement scheduled jobs.
-- [ ] Build a service-to-service communication example.
-- [ ] Design a small microservices-based application.
-
-### Completion Criteria
-
-- [ ] Can independently structure backend applications.
-- [ ] Can implement caching and asynchronous processing.
-- [ ] Understands messaging and distributed system fundamentals.
-- [ ] Can identify appropriate architectural approaches for backend requirements.
-
----
-
-## 22. Deployment and Production Practices
-
-### Learning Objectives
-- Package and deploy backend applications.
-- Understand containerization.
-- Implement basic CI/CD workflows.
-- Understand production monitoring and troubleshooting.
-
-### Topics
-
-- [ ] Executable JAR packaging.
-- [ ] Linux fundamentals.
-- [ ] Environment variables and secrets.
-- [ ] Docker fundamentals.
-- [ ] Dockerfiles.
-- [ ] Docker Compose.
-- [ ] Database containerization.
-- [ ] CI/CD fundamentals.
-- [ ] GitHub Actions.
-- [ ] Cloud deployment fundamentals.
-- [ ] Application monitoring.
-- [ ] Health checks.
-- [ ] Production logging.
-- [ ] Error tracking.
-- [ ] Performance profiling.
-- [ ] Production troubleshooting.
-
-### Practical Tasks
-
+**Requirements**
 - [ ] Package a Spring Boot application.
-- [ ] Dockerize the application.
-- [ ] Run the application and PostgreSQL using Docker Compose.
+- [ ] Run the executable JAR.
 - [ ] Configure environment variables.
-- [ ] Create a basic CI pipeline.
-- [ ] Deploy an application.
-- [ ] Configure application health checks.
+- [ ] Configure application profiles.
+- [ ] Inspect application logs.
+- [ ] Stop and restart the application.
 
-### Completion Criteria
+**Concepts required**
+- Executable JAR.
+- Linux fundamentals.
+- Environment variables.
+- Secrets and configuration.
+- Process management.
+- Application logging.
 
-- [ ] Can package and deploy Spring Boot applications.
-- [ ] Can run backend applications using Docker.
-- [ ] Understands basic CI/CD workflows.
-- [ ] Can monitor application health.
-- [ ] Can investigate basic application and performance issues.
+## 2. Docker
+
+### Exercise 55 — Containerize a Backend Application
+
+**Requirements**
+- [ ] Create a Dockerfile.
+- [ ] Build a Docker image.
+- [ ] Run the application in a container.
+- [ ] Configure environment variables.
+- [ ] Persist required data.
+- [ ] Connect the application to PostgreSQL.
+
+**Concepts required**
+- Docker fundamentals.
+- Images and containers.
+- Dockerfiles.
+- Container networking.
+- Volumes.
+- Environment configuration.
+
+### Exercise 56 — Docker Compose Application Environment
+
+**Requirements**
+- [ ] Run the backend application and PostgreSQL using Docker Compose.
+- [ ] Configure service networking.
+- [ ] Configure persistent database storage.
+- [ ] Manage environment-specific configuration.
+- [ ] Start and stop the environment.
+
+**Concepts required**
+- Docker Compose.
+- Service definitions.
+- Networks.
+- Volumes.
+- Container dependencies.
+- Database containerization.
+
+## 3. CI/CD
+
+### Exercise 57 — Automate the Build and Test Pipeline
+
+**Requirements**
+- [ ] Trigger a pipeline on code changes.
+- [ ] Build the application.
+- [ ] Run automated tests.
+- [ ] Package the application.
+- [ ] Report failed builds.
+- [ ] Prevent deployment when required checks fail.
+
+**Concepts required**
+- CI/CD fundamentals.
+- GitHub Actions.
+- Workflow files.
+- Build automation.
+- Automated testing.
+- Artifact management.
+
+## 4. Deployment
+
+### Exercise 58 — Deploy a Backend Application
+
+**Requirements**
+- [ ] Deploy a backend application to a cloud or hosting environment.
+- [ ] Configure environment variables and secrets.
+- [ ] Connect a database.
+- [ ] Expose the API.
+- [ ] Configure health checks.
+- [ ] Verify application behavior after deployment.
+
+**Concepts required**
+- Cloud deployment fundamentals.
+- Application hosting.
+- Environment configuration.
+- Database connectivity.
+- Networking and ports.
+- Health checks.
+
+## 5. Production Troubleshooting
+
+### Exercise 59 — Investigate Production-Like Failures
+
+**Requirements**
+- [ ] Investigate an application startup failure.
+- [ ] Diagnose a database connectivity issue.
+- [ ] Investigate a failed API request.
+- [ ] Identify a slow endpoint.
+- [ ] Investigate resource usage.
+- [ ] Recover an application after a failure.
+
+**Concepts required**
+- Production logging.
+- Error tracking.
+- Monitoring.
+- Health checks.
+- Performance profiling.
+- Troubleshooting.
+- Resource management.
 
 ---
 
-# TRACK 3: PRACTICAL BACKEND PROJECTS
+# TRACK 3: INDEPENDENT BACKEND PROJECTS
 
-**Objective:** Consolidate Java and backend knowledge by developing complete applications independently.
+The exercises above introduce individual concepts and techniques. These projects bring them together.
+
+Project requirements should describe what needs to be built, not prescribe every class, method, or implementation detail.
+
+Use the concepts you've practised to make your own design decisions.
 
 ## Beginner Projects
 
-- [ ] Console-based Banking Application.
-- [ ] Student Management System.
-- [ ] Library Management System.
-- [ ] Employee Management System.
+### Project 1 — Console Banking Application
+
+**Requirements**
+- [ ] Create and manage bank accounts.
+- [ ] Deposit and withdraw funds.
+- [ ] Transfer money between accounts.
+- [ ] Track transaction history.
+- [ ] Support different account types.
+- [ ] Validate operations.
+- [ ] Handle invalid inputs and business-rule violations.
+
+**Suggested concepts:** Java fundamentals, OOP, collections, exceptions, methods, file I/O.
+
+### Project 2 — Student Management System
+
+**Requirements**
+- [ ] Register students.
+- [ ] Manage courses.
+- [ ] Enroll students in courses.
+- [ ] Track marks and grades.
+- [ ] Generate student reports.
+- [ ] Search and filter student records.
+
+**Suggested concepts:** OOP, collections, interfaces, sorting, file handling.
+
+### Project 3 — Library Management System
+
+**Requirements**
+- [ ] Manage books and members.
+- [ ] Issue and return books.
+- [ ] Track borrowing history.
+- [ ] Search and filter books.
+- [ ] Prevent invalid borrowing operations.
+- [ ] Generate reports.
+
+**Suggested concepts:** OOP, object relationships, collections, exceptions, persistence.
 
 ## Intermediate Projects
 
-- [ ] Task Management REST API.
-- [ ] Expense Tracker Backend.
-- [ ] Inventory Management System.
-- [ ] Blog Management Backend.
-- [ ] Authentication and Authorization Service.
+### Project 4 — Task Management REST API
+
+**Requirements**
+- [ ] User registration and authentication.
+- [ ] Create, update, retrieve, and delete tasks.
+- [ ] Assign tasks to users.
+- [ ] Support task statuses and priorities.
+- [ ] Implement filtering and pagination.
+- [ ] Restrict access to user-owned tasks.
+- [ ] Write automated tests.
+- [ ] Document APIs.
+
+**Suggested concepts:** Spring Boot, REST, PostgreSQL, JPA, Spring Security, validation, testing.
+
+### Project 5 — Expense Tracker Backend
+
+**Requirements**
+- [ ] Manage users and expenses.
+- [ ] Categorize expenses.
+- [ ] Support income and expense records.
+- [ ] Generate monthly and yearly summaries.
+- [ ] Filter transactions by date and category.
+- [ ] Generate spending reports.
+
+**Suggested concepts:** SQL, JPA, aggregations, REST APIs, authentication, testing.
+
+### Project 6 — Inventory Management System
+
+**Requirements**
+- [ ] Manage products and categories.
+- [ ] Track inventory levels.
+- [ ] Record stock additions and removals.
+- [ ] Maintain inventory history.
+- [ ] Prevent invalid stock operations.
+- [ ] Support multiple users and roles.
+- [ ] Generate inventory reports.
+
+**Suggested concepts:** Database design, transactions, JPA, SQL, authorization.
+
+### Project 7 — Blog Management Backend
+
+**Requirements**
+- [ ] Manage users and posts.
+- [ ] Support categories and tags.
+- [ ] Implement comments.
+- [ ] Support search and pagination.
+- [ ] Implement authorization.
+- [ ] Maintain post publication status.
+
+**Suggested concepts:** REST, JPA relationships, security, SQL, validation.
 
 ## Advanced Projects
 
-- [ ] E-commerce Backend.
-- [ ] Payment and Transaction Management System.
-- [ ] Multi-user Booking Platform.
-- [ ] Notification Service.
-- [ ] Microservices-based Application.
+### Project 8 — E-commerce Backend
 
-## Final Capstone Project
+**Requirements**
+- [ ] Manage users and products.
+- [ ] Support product categories.
+- [ ] Implement shopping carts.
+- [ ] Create orders.
+- [ ] Manage order status.
+- [ ] Implement inventory updates.
+- [ ] Integrate a payment provider or payment simulation.
+- [ ] Handle transaction consistency.
+- [ ] Send order notifications.
+- [ ] Support administrative operations.
 
-- [ ] Design a complete backend application.
+**Suggested concepts:** Spring Boot, JPA, security, transactions, caching, messaging, testing.
+
+### Project 9 — Booking Platform
+
+**Requirements**
+- [ ] Manage users and bookable resources.
+- [ ] Support availability searches.
+- [ ] Create and cancel bookings.
+- [ ] Prevent conflicting reservations.
+- [ ] Handle concurrent booking attempts.
+- [ ] Maintain booking history.
+- [ ] Send notifications.
+
+**Suggested concepts:** SQL transactions, concurrency, locking, idempotency, REST, messaging.
+
+### Project 10 — Notification Service
+
+**Requirements**
+- [ ] Accept notification requests.
+- [ ] Support multiple delivery channels.
+- [ ] Process notifications asynchronously.
+- [ ] Track delivery status.
+- [ ] Retry failed deliveries.
+- [ ] Prevent duplicate processing.
+- [ ] Provide operational metrics.
+
+**Suggested concepts:** Messaging, Kafka, asynchronous processing, retries, idempotency, observability.
+
+### Project 11 — Microservices-Based Application
+
+**Requirements**
+- [ ] Identify suitable service boundaries.
+- [ ] Implement multiple independent services.
+- [ ] Define service communication.
+- [ ] Handle service failures.
+- [ ] Implement event-based communication where appropriate.
+- [ ] Address data ownership.
+- [ ] Monitor the system.
+
+**Suggested concepts:** Microservices, distributed systems, Kafka, resilience, Docker, observability.
+
+---
+
+# Final Capstone Project
+
+**Objective:** Independently design, build, test, secure, deploy, and document a complete backend application.
+
+Choose a problem that has enough complexity to demonstrate the skills developed throughout this roadmap.
+
+### Minimum requirements
+
+- [ ] Define the problem and functional requirements.
+- [ ] Design the application architecture.
+- [ ] Design the relational database.
 - [ ] Implement REST APIs.
 - [ ] Integrate PostgreSQL.
 - [ ] Implement authentication and authorization.
-- [ ] Implement caching.
-- [ ] Implement asynchronous processing.
+- [ ] Implement request validation and error handling.
 - [ ] Write unit and integration tests.
+- [ ] Implement appropriate logging.
+- [ ] Implement caching where justified.
+- [ ] Implement asynchronous processing where justified.
 - [ ] Dockerize the application.
 - [ ] Configure CI/CD.
 - [ ] Deploy the application.
+- [ ] Configure health checks and basic monitoring.
 - [ ] Document architecture and APIs.
+- [ ] Document setup and deployment instructions.
 
-## Project Quality Checklist
+### Project expectations
 
-For every major backend project:
+- Make your own architectural decisions.
+- Do not copy a complete tutorial implementation.
+- Use abstractions where they solve actual problems.
+- Avoid unnecessary complexity.
+- Handle invalid inputs and failure scenarios.
+- Keep the application maintainable.
+- Document important design decisions.
 
-- [ ] Proper project structure.
-- [ ] Clean architecture.
-- [ ] Database integration.
-- [ ] Request validation.
-- [ ] Global exception handling.
-- [ ] Authentication and authorization.
-- [ ] Unit tests.
-- [ ] Integration tests.
-- [ ] API documentation.
-- [ ] Logging.
-- [ ] Docker support.
-- [ ] Deployment.
+The capstone should demonstrate that you can independently turn a problem into a working backend system.
 
 ---
 
-# Learning and Completion Guidelines
+# SKILLS COVERAGE LEDGER
 
-A topic should only be marked complete when its corresponding completion criteria have been satisfied.
+Use this ledger to track practical exposure to the topics throughout the roadmap.
 
-For every topic:
+**Rule:** Check a topic only after you have used it in code as part of an exercise or project. Reading about it does not count. The initial checked items below are limited to what is demonstrated by your submitted console-greeting program.
 
-1. Understand the concept.
-2. Study its syntax and internal working where relevant.
-3. Write code independently.
-4. Test the implementation with different inputs.
-5. Understand important edge cases.
-6. Be able to explain the concept without referring to learning material.
+## Java Fundamentals
 
-For every practical task:
+- [x] Variables
+- [ ] Constants
+- [ ] Primitive data types
+- [x] Reference data types
+- [ ] Type casting and conversion
+- [ ] Operators and expressions
+- [ ] Conditional statements
+- [ ] Switch statements and expressions
+- [ ] For loops
+- [ ] While loops
+- [ ] Do-while loops
+- [ ] Enhanced for loops
+- [ ] Break and continue
+- [x] Scanner and user input
+- [x] Methods
+- [ ] Method parameters
+- [x] Return types
+- [ ] Method overloading
+- [ ] Variable scope and lifetime
+- [ ] Pass-by-value
+- [ ] Recursion
+- [ ] Arrays
+- [ ] Multidimensional arrays
+- [ ] Strings and String methods
+- [ ] StringBuilder and StringBuffer
+- [ ] Wrapper classes
+- [ ] Autoboxing and unboxing
+- [x] String concatenation
 
-1. Implement the solution independently.
-2. Verify that it works.
-3. Handle relevant errors.
-4. Commit the implementation to GitHub.
+## Object-Oriented Programming
 
-Do not rush through sections to increase completion percentage. Understanding and implementation are more important than the number of checked boxes.
+- [x] Classes and objects
+- [ ] Fields and methods
+- [ ] Constructors
+- [ ] Constructor overloading
+- [ ] this keyword
+- [ ] Static variables and methods
+- [ ] Access modifiers
+- [ ] Encapsulation
+- [ ] Inheritance
+- [ ] Method overriding
+- [ ] Polymorphism
+- [ ] Abstraction
+- [ ] Abstract classes
+- [ ] Interfaces
+- [ ] super keyword
+- [ ] final keyword
+- [ ] Association
+- [ ] Aggregation
+- [ ] Composition
+- [ ] Object class
+- [ ] toString()
+- [ ] equals() and hashCode()
+- [ ] Object references
+- [ ] Shallow and deep copying
+- [ ] Immutable objects
+- [ ] Enums
+- [ ] Nested and inner classes
+- [ ] Anonymous classes
+
+## Exception Handling
+
+- [ ] Exception and Error hierarchy
+- [ ] Checked and unchecked exceptions
+- [ ] try, catch, finally
+- [ ] Multiple catch blocks
+- [ ] throw and throws
+- [ ] Custom exceptions
+- [ ] Exception propagation
+- [ ] Try-with-resources
+
+## Collections and Generics
+
+- [ ] Collections Framework
+- [ ] Iterable and Collection
+- [ ] List and ArrayList
+- [ ] LinkedList
+- [ ] Set and HashSet
+- [ ] LinkedHashSet and TreeSet
+- [ ] Queue and Deque
+- [ ] PriorityQueue
+- [ ] Map and HashMap
+- [ ] LinkedHashMap and TreeMap
+- [ ] ConcurrentHashMap
+- [ ] Iterator and ListIterator
+- [ ] Comparable and Comparator
+- [ ] Hashing and collision handling
+- [ ] HashMap internal working
+- [ ] Time and space complexity
+- [ ] Generic classes
+- [ ] Generic methods
+- [ ] Generic interfaces
+- [ ] Bounded type parameters
+- [ ] Wildcards
+- [ ] Upper and lower bounds
+- [ ] Type erasure
+
+## Functional and Modern Java
+
+- [ ] Functional interfaces
+- [ ] Lambda expressions
+- [ ] Method references
+- [ ] Predicate
+- [ ] Function
+- [ ] Consumer
+- [ ] Supplier
+- [ ] Optional
+- [ ] Stream API
+- [ ] Intermediate and terminal operations
+- [ ] Filtering and mapping
+- [ ] flatMap
+- [ ] Sorting and reduction
+- [ ] Collectors
+- [ ] Grouping and partitioning
+- [ ] Parallel streams
+- [ ] Default and static interface methods
+- [ ] Records
+- [ ] Sealed classes
+- [ ] Pattern matching
+- [ ] Switch expressions
+- [ ] Text blocks
+- [ ] Date and Time API
+
+## File Handling and Java Platform
+
+- [ ] File and Path APIs
+- [ ] FileInputStream and FileOutputStream
+- [ ] FileReader and FileWriter
+- [ ] BufferedReader and BufferedWriter
+- [ ] NIO and NIO.2
+- [ ] Serialization and deserialization
+- [ ] JSON processing
+- [ ] Properties files
+- [ ] Annotations
+- [ ] Custom annotations
+- [ ] Reflection API
+- [ ] Regular expressions
+- [ ] Networking fundamentals
+- [ ] Socket programming
+- [ ] Internationalization
+- [ ] Java modules
+- [ ] Java security fundamentals
+
+## Concurrency and JVM
+
+- [ ] Processes and threads
+- [ ] Thread lifecycle
+- [ ] Thread and Runnable
+- [ ] Callable and Future
+- [ ] Synchronization
+- [ ] Race conditions
+- [ ] Deadlocks
+- [ ] Volatile
+- [ ] Atomic variables
+- [ ] Locks and ReentrantLock
+- [ ] ExecutorService
+- [ ] Thread pools
+- [ ] CompletableFuture
+- [ ] Concurrent collections
+- [ ] Java Memory Model
+- [ ] Virtual threads
+- [ ] JVM architecture
+- [ ] Class loading
+- [ ] Bytecode
+- [ ] Stack and heap
+- [ ] Garbage collection
+- [ ] Memory leaks
+- [ ] JIT compilation
+- [ ] JVM arguments and monitoring
+
+## Development Tools and Testing
+
+- [ ] JDK and VS Code setup
+- [ ] Terminal compilation and execution
+- [ ] Git branching and merging
+- [ ] Pull requests and code reviews
+- [ ] Merge conflict resolution
+- [ ] Git tags and releases
+- [ ] Maven
+- [ ] pom.xml and dependency management
+- [ ] Maven lifecycle and plugins
+- [ ] Multi-module Maven projects
+- [ ] Gradle fundamentals
+- [ ] Debugging and breakpoints
+- [ ] Logging with SLF4J and Logback
+- [ ] Clean code
+- [ ] SOLID principles
+- [ ] Design patterns
+- [ ] UML and class diagrams
+- [ ] JUnit 5
+- [ ] Assertions and parameterized tests
+- [ ] Mockito
+- [ ] Mocking and stubbing
+- [ ] Unit testing
+- [ ] Integration testing
+- [ ] Test coverage
+- [ ] Test-driven development fundamentals
+
+## SQL and Databases
+
+- [ ] Relational database fundamentals
+- [ ] Tables, rows, and columns
+- [ ] Primary and foreign keys
+- [ ] Constraints
+- [ ] SQL data types
+- [ ] SELECT, INSERT, UPDATE, DELETE
+- [ ] WHERE and ORDER BY
+- [ ] GROUP BY and HAVING
+- [ ] Aggregate functions
+- [ ] Joins
+- [ ] Subqueries
+- [ ] Common Table Expressions
+- [ ] Indexes
+- [ ] Database normalization
+- [ ] Transactions
+- [ ] ACID properties
+- [ ] Isolation levels
+- [ ] Query optimization
+- [ ] PostgreSQL
+- [ ] JDBC architecture and drivers
+- [ ] Connection and PreparedStatement
+- [ ] ResultSet
+- [ ] SQL injection prevention
+- [ ] JDBC transactions
+- [ ] Connection pooling
+
+## Spring and Backend Development
+
+- [ ] Spring Framework
+- [ ] Inversion of Control
+- [ ] Dependency Injection
+- [ ] Spring Beans and lifecycle
+- [ ] ApplicationContext
+- [ ] Component scanning
+- [ ] Configuration classes
+- [ ] Bean scopes
+- [ ] Spring annotations
+- [ ] AOP fundamentals
+- [ ] Spring Boot
+- [ ] Spring Initializr
+- [ ] Auto-configuration
+- [ ] Starter dependencies
+- [ ] Application properties and YAML
+- [ ] Configuration properties
+- [ ] Profiles
+- [ ] Spring Boot Actuator
+- [ ] HTTP and HTTPS
+- [ ] REST architecture
+- [ ] HTTP methods and status codes
+- [ ] JSON
+- [ ] REST controllers
+- [ ] DTOs
+- [ ] Request validation
+- [ ] Global exception handling
+- [ ] Pagination and sorting
+- [ ] Filtering and searching
+- [ ] API versioning
+- [ ] OpenAPI and Swagger
+- [ ] CORS
+
+## Persistence and Security
+
+- [ ] ORM fundamentals
+- [ ] JPA and Hibernate
+- [ ] Entities and entity lifecycle
+- [ ] Entity relationships
+- [ ] Spring Data repositories
+- [ ] Derived query methods
+- [ ] JPQL and native queries
+- [ ] Lazy and eager loading
+- [ ] N+1 query problem
+- [ ] Cascading and orphan removal
+- [ ] Transactions
+- [ ] Database auditing
+- [ ] Flyway or Liquibase
+- [ ] Authentication and authorization
+- [ ] Spring Security
+- [ ] Security filters
+- [ ] Password hashing
+- [ ] Role-based access control
+- [ ] Session-based authentication
+- [ ] JWT
+- [ ] OAuth 2.0
+- [ ] OpenID Connect
+- [ ] Resource server configuration
+- [ ] Method-level security
+- [ ] CSRF and CORS
+- [ ] Security best practices
+
+## Backend Engineering and Architecture
+
+- [ ] Layered architecture
+- [ ] Controller-Service-Repository
+- [ ] DTO and entity separation
+- [ ] Clean architecture fundamentals
+- [ ] SOLID principles
+- [ ] Design patterns
+- [ ] Caching
+- [ ] Redis
+- [ ] Asynchronous processing
+- [ ] Message queues
+- [ ] Kafka
+- [ ] Scheduled jobs
+- [ ] WebSockets
+- [ ] Rate limiting
+- [ ] Idempotency
+- [ ] Distributed systems fundamentals
+- [ ] Microservices fundamentals
+- [ ] Service-to-service communication
+- [ ] Resilience and fault tolerance
+- [ ] Observability and monitoring
+- [ ] Performance profiling
+
+## Deployment and Production
+
+- [ ] Executable JAR packaging
+- [ ] Linux fundamentals
+- [ ] Environment variables and secrets
+- [ ] Docker fundamentals
+- [ ] Dockerfiles
+- [ ] Docker Compose
+- [ ] Container networking and volumes
+- [ ] Database containerization
+- [ ] CI/CD fundamentals
+- [ ] GitHub Actions
+- [ ] Cloud deployment
+- [ ] Application monitoring
+- [ ] Health checks
+- [ ] Production logging
+- [ ] Error tracking
+- [ ] Performance profiling
+- [ ] Production troubleshooting
 
 ---
 
-# Overall Progress Tracker
-
-| Track | Phase | Description | Status |
-|---|---|---|---|
-| Core Java | 1 | Development Environment Setup | Not Started |
-| Core Java | 2 | Java Language Fundamentals | Not Started |
-| Core Java | 3 | Object-Oriented Programming | Not Started |
-| Core Java | 4 | Exception Handling | Not Started |
-| Core Java | 5 | Collections Framework | Not Started |
-| Core Java | 6 | Generics | Not Started |
-| Core Java | 7 | Functional Programming and Modern Java | Not Started |
-| Core Java | 8 | File Handling and I/O | Not Started |
-| Core Java | 9 | Multithreading and Concurrency | Not Started |
-| Core Java | 10 | JVM Internals and Memory Management | Not Started |
-| Core Java | 11 | Additional Java Language and Platform Features | Not Started |
-| Backend | 12 | Development Tools and Engineering Practices | Not Started |
-| Backend | 13 | Software Testing | Not Started |
-| Backend | 14 | SQL and Database Fundamentals | Not Started |
-| Backend | 15 | JDBC | Not Started |
-| Backend | 16 | Spring Framework Fundamentals | Not Started |
-| Backend | 17 | Spring Boot | Not Started |
-| Backend | 18 | REST API Development | Not Started |
-| Backend | 19 | Spring Data JPA and Hibernate | Not Started |
-| Backend | 20 | Spring Security | Not Started |
-| Backend | 21 | Backend Architecture and Engineering | Not Started |
-| Backend | 22 | Deployment and Production Practices | Not Started |
-| Projects | 23 | Practical Backend Projects | Not Started |
-
----
-
-**Final Goal:** Develop strong Java programming proficiency first, then use that foundation to become capable of independently building, testing, securing, deploying, and maintaining professional Java backend applications using Spring Boot.
+**Final Goal:** Become capable of independently solving programming problems, designing maintainable Java applications, building secure backend systems, working with databases, testing software, and deploying production-ready applications using the Java ecosystem.
