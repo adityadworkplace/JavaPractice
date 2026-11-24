@@ -117,11 +117,11 @@ This exercise records the functionality demonstrated by your submitted `Name` an
 **Objective:** Build a program that collects and displays information about a user.
 
 **Requirements**
-- [ ] Collect name, age, city, and other personal information.
-- [ ] Store values using appropriate data types.
-- [ ] Display the information in a formatted manner.
-- [ ] Calculate the user's age after five years.
-- [ ] Handle names containing spaces.
+- [x] Collect name, age, city, and other personal information.
+- [x] Store values using appropriate data types.
+- [x] Display the information in a formatted manner.
+- [x] Calculate the user's age after five years.
+- [x] Handle names containing spaces.
 
 **Concepts required**
 - Variables and constants.
@@ -132,9 +132,9 @@ This exercise records the functionality demonstrated by your submitted `Name` an
 - Arithmetic operators.
 
 **Done when**
-- [ ] All information is collected and displayed correctly.
-- [ ] Appropriate data types are used.
-- [ ] Inputs containing spaces are handled correctly.
+- [x] All information is collected and displayed correctly.
+- [x] Appropriate data types are used.
+- [x] Inputs containing spaces are handled correctly.
 
 ### Exercise 2 — Smart Calculator
 
