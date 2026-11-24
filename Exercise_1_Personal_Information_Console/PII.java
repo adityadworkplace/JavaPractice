@@ -14,6 +14,8 @@ public class PII {
         System.out.print("Enter your City: ");
         String city = sc.next();
 
+        sc.close();
+
         // Index of space between first name and last name
         byte space = (byte) name.indexOf(" ");
         
