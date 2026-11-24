@@ -141,12 +141,12 @@ This exercise records the functionality demonstrated by your submitted `Name` an
 **Objective:** Build a calculator that supports multiple mathematical operations.
 
 **Requirements**
-- [ ] Addition, subtraction, multiplication, division, and modulus.
-- [ ] Accept multiple operations.
-- [ ] Support decimal numbers.
-- [ ] Display meaningful results.
-- [ ] Prevent division by zero.
-- [ ] Allow the user to choose operations.
+- [x] Addition, subtraction, multiplication, division, and modulus.
+- [x] Accept multiple operations.
+- [x] Support decimal numbers.
+- [x] Display meaningful results.
+- [x] Prevent division by zero.
+- [x] Allow the user to choose operations.
 
 **Concepts required**
 - Operators and expressions.
@@ -156,9 +156,9 @@ This exercise records the functionality demonstrated by your submitted `Name` an
 - Input validation.
 
 **Done when**
-- [ ] All supported operations work.
-- [ ] Invalid operations are handled.
-- [ ] Division by zero does not produce an uncontrolled failure.
+- [x] All supported operations work.
+- [x] Invalid operations are handled.
+- [x] Division by zero does not produce an uncontrolled failure.
 
 ---
 

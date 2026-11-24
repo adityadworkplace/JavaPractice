@@ -55,12 +55,12 @@ public class Calculator {
                 case '/':
                     if(b!=0){
                         result = div(a,b);
-                    } else { System.out.println("Division by 0 not possible");}
+                    } else { System.out.println("Division by 0 not possible"); continue;}
                     break;
                 case '%':
                     if(b!=0){
                         result = mod(a,b);
-                    } else { System.out.println("Division by 0 not possible");}
+                    } else { System.out.println("Division by 0 not possible"); continue;}
                     break;
                 default:
                     System.out.println("Invalid input");
