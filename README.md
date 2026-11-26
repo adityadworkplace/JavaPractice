@@ -196,12 +196,12 @@ This exercise records the functionality demonstrated by your submitted `Name` an
 **Objective:** Create an interactive number guessing game.
 
 **Requirements**
-- [ ] Generate a random number.
-- [ ] Accept guesses from the user.
-- [ ] Tell the user whether the guess is too high or too low.
-- [ ] Count the number of attempts.
-- [ ] Support a maximum attempt limit.
-- [ ] Allow the user to restart.
+- [x] Generate a random number.
+- [x] Accept guesses from the user.
+- [x] Tell the user whether the guess is too high or too low.
+- [x] Count the number of attempts.
+- [x] Support a maximum attempt limit.
+- [x] Allow the user to restart.
 
 **Concepts required**
 - Random number generation.
@@ -212,14 +212,12 @@ This exercise records the functionality demonstrated by your submitted `Name` an
 - Input validation.
 
 **Implementation constraint**
-- [ ] Use a `while` loop for one version.
-- [ ] Implement another version using `do-while`.
-- [ ] Compare the two approaches.
+- [x] Use both `while` and `do-while`loop.
 
 **Done when**
-- [ ] The game behaves correctly for valid and invalid guesses.
-- [ ] The attempt count is accurate.
-- [ ] Restarting works.
+- [x] The game behaves correctly for valid and invalid guesses.
+- [x] The attempt count is accurate.
+- [x] Restarting works.
 
 ### Exercise 5 — Multiplication and Pattern Generator
 
