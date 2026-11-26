@@ -169,14 +169,14 @@ This exercise records the functionality demonstrated by your submitted `Name` an
 **Objective:** Build a program that analyzes numbers and identifies their mathematical properties.
 
 **Requirements**
-- [ ] Check whether a number is positive, negative, or zero.
-- [ ] Identify even and odd numbers.
-- [ ] Check whether a number is prime.
-- [ ] Check whether a number is an Armstrong number.
-- [ ] Check whether a number is a palindrome.
-- [ ] Identify perfect numbers.
-- [ ] Calculate the sum of digits.
-- [ ] Reverse a number.
+- [x] Check whether a number is positive, negative, or zero.
+- [x] Identify even and odd numbers.
+- [x] Check whether a number is prime.
+- [x] Check whether a number is an Armstrong number.
+- [x] Check whether a number is a palindrome.
+- [x] Identify perfect numbers.
+- [x] Calculate the sum of digits.
+- [x] Reverse a number.
 
 **Concepts required**
 - If, else-if, and else.
@@ -187,9 +187,9 @@ This exercise records the functionality demonstrated by your submitted `Name` an
 - Methods and return values.
 
 **Done when**
-- [ ] Each analysis produces correct results.
-- [ ] Boundary cases such as zero, negative numbers, and single-digit numbers are handled appropriately.
-- [ ] Individual operations are organized into reusable methods.
+- [x] Each analysis produces correct results.
+- [x] Boundary cases such as zero, negative numbers, and single-digit numbers are handled appropriately.
+- [x] Individual operations are organized into reusable methods.
 
 ### Exercise 4 — Number Guessing Game
 
@@ -1922,20 +1922,20 @@ Use this ledger to track practical exposure to the topics throughout the roadmap
 
 - [x] Variables
 - [ ] Constants
-- [ ] Primitive data types
+- [x] Primitive data types
 - [x] Reference data types
-- [ ] Type casting and conversion
-- [ ] Operators and expressions
-- [ ] Conditional statements
-- [ ] Switch statements and expressions
-- [ ] For loops
+- [x] Type casting and conversion
+- [x] Operators and expressions
+- [x] Conditional statements
+- [x] Switch statements and expressions
+- [x] For loops
 - [ ] While loops
-- [ ] Do-while loops
+- [x] Do-while loops
 - [ ] Enhanced for loops
-- [ ] Break and continue
+- [x] Break and continue
 - [x] Scanner and user input
 - [x] Methods
-- [ ] Method parameters
+- [x] Method parameters
 - [x] Return types
 - [ ] Method overloading
 - [ ] Variable scope and lifetime
@@ -1943,7 +1943,7 @@ Use this ledger to track practical exposure to the topics throughout the roadmap
 - [ ] Recursion
 - [ ] Arrays
 - [ ] Multidimensional arrays
-- [ ] Strings and String methods
+- [x] Strings and String methods
 - [ ] StringBuilder and StringBuffer
 - [ ] Wrapper classes
 - [ ] Autoboxing and unboxing
@@ -1956,7 +1956,7 @@ Use this ledger to track practical exposure to the topics throughout the roadmap
 - [ ] Constructors
 - [ ] Constructor overloading
 - [ ] this keyword
-- [ ] Static variables and methods
+- [x] Static variables and methods
 - [ ] Access modifiers
 - [ ] Encapsulation
 - [ ] Inheritance
@@ -1995,7 +1995,7 @@ Use this ledger to track practical exposure to the topics throughout the roadmap
 
 - [ ] Collections Framework
 - [ ] Iterable and Collection
-- [ ] List and ArrayList
+- [x] List and ArrayList
 - [ ] LinkedList
 - [ ] Set and HashSet
 - [ ] LinkedHashSet and TreeSet
@@ -2092,8 +2092,8 @@ Use this ledger to track practical exposure to the topics throughout the roadmap
 
 ## Development Tools and Testing
 
-- [ ] JDK and VS Code setup
-- [ ] Terminal compilation and execution
+- [x] JDK and VS Code setup
+- [x] Terminal compilation and execution
 - [ ] Git branching and merging
 - [ ] Pull requests and code reviews
 - [ ] Merge conflict resolution
